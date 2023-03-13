@@ -1,69 +1,70 @@
+# Getting Started with Create React App
 
-# Decentralised Airbnb
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
- A completely responsive decentralised react Airbnb clone made with travel advisor, google maps api, google places api, material ui, solidity, moralisDb and web3uikit.
+## Available Scripts
 
-## Demo
+In the project directory, you can run:
 
-https://decentralised-airbnb.netlify.app/
-![Screenshot from 2022-05-20 22-48-38](https://user-images.githubusercontent.com/69376775/169581095-7f08dec9-80ce-4745-a7e3-0393722badc9.png)
+### `npm start`
 
-![Screenshot from 2022-05-20 22-51-35](https://user-images.githubusercontent.com/69376775/169581105-e4cd507e-55cd-4db1-a73c-522df7e06396.png)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-![Screenshot from 2022-05-20 22-53-05](https://user-images.githubusercontent.com/69376775/169581107-aa31f00a-9541-4647-b3da-9e3debcc1af6.png)
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-![Screenshot from 2022-05-20 22-53-29](https://user-images.githubusercontent.com/69376775/169581111-6e5e3618-467b-467e-ab5e-25b7538f136d.png)
+### `npm test`
 
-![Screenshot from 2022-05-20 22-55-17](https://user-images.githubusercontent.com/69376775/169581117-9bc472b2-2741-419c-b66a-2918854334c9.png)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-![Screenshot from 2022-05-20 22-56-07](https://user-images.githubusercontent.com/69376775/169581127-5b59dc02-bad6-4f58-ac2c-c06293fff563.png)
+### `npm run build`
 
-![Screenshot from 2022-05-20 22-56-27](https://user-images.githubusercontent.com/69376775/169581128-903ee7bd-d83d-464a-b072-6dad5c1d6bc9.png)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-![Screenshot from 2022-05-20 22-57-03](https://user-images.githubusercontent.com/69376775/169581138-d7424c8b-ad3c-4dde-9266-ac4081c96588.png)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-![Screenshot from 2022-05-20 22-57-29](https://user-images.githubusercontent.com/69376775/169581145-c755c33f-4e21-48c6-95b0-f576b98598bb.png)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run eject`
 
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## Environment Variables
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-To run this project, you will need to add the following environment variables to your .env file
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-`REACT_APP_GOOGLE_MAP_API_KEY`
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-`REACT_APP_TRAVEL_ADVISOR_API_KEY`
+## Learn More
 
-`REACT_APP_MORALIS_APP_ID`
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-`REACT_APP_MORALIS_SERVER_URL`
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-`REACT_APP_CONTRACT_ADDRESS=0xf41f748dD76822B2550C8d66e164c312cce776Ca`
+### Code Splitting
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-## Run Locally
+### Analyzing the Bundle Size
 
-Clone the project
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-```bash
-  git clone https://github.com/Pranay-Gupta/decentralised-airbnb.git
-```
+### Making a Progressive Web App
 
-Go to the project directory
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-```bash
-  cd decentralised-airbnb
-```
+### Advanced Configuration
 
-Install dependencies
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-```bash
-  yarn
-```
+### Deployment
 
-Start the server
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-```bash
-  yarn start
-```
+### `npm run build` fails to minify
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
