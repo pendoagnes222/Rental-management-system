@@ -77,6 +77,7 @@ function Home() {
             price="£130/night"/>
 
         </div>
+        
         <div className="amenities">
             <Card 
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHdi_ssWLxJ_kC6HO_qxRxv_i-BX-TzSiB7A&usqp=CAU"
@@ -95,6 +96,26 @@ function Home() {
             price="£130/night"/>
 
         </div>
+
+        <div className="amenities">
+        <Card 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHdi_ssWLxJ_kC6HO_qxRxv_i-BX-TzSiB7A&usqp=CAU"
+            title="serviced apartment in Nairobi"
+            description="Superhost with a stunning view of the beachside "
+            price="£130/night"/>
+            <Card 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWVSqNUpnk2SFkR4XEpQf6e26BAnka0VtrEg&usqp=CAU"
+            title="serviced apartment in Nairobi"
+            description="Superhost with a stunning view of the beachside "
+            price="£130/night"/>
+            <Card 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXVt-sAkBm5hbTgRPhaa59Oras3qC5Va5ZfA&usqp=CAU"
+            title="serviced apartment in Nairobi"
+            description="Superhost with a stunning view of the beachside "
+            price="£130/night"/>
+        </div>
+        
+        
         <div>
             <Service />
         </div>
