@@ -5,14 +5,11 @@
     
 }
 
-.icons {
-   margin-left: 5vh;
-   margin-right: 5vh;
-  
-   display: grid;
-   grid-template-columns: repeat(6, 1fr);
-   column-gap: 1px;  
-    
-   
+.services__info {
+    padding: 10px;
+
 }
 
+.cardi {
+    display: inline-block;
+}
