@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+.amenities__info{
+    padding-left: 10px;
+   }
+   
+   
+   .amenities_img {
+       
+       display: flex;
+       min-width: 200px;
+       
+   
+   }
+=======
 .services__info {
     padding: 0;
     margin: 0;
@@ -5,14 +19,12 @@
     
 }
 
-.icons {
-   margin-left: 5vh;
-   margin-right: 5vh;
-  
-   display: grid;
-   grid-template-columns: repeat(6, 1fr);
-   column-gap: 1px;  
-    
-   
+.services__info {
+    padding: 10px;
+
 }
 
+.cardi {
+    display: inline-block;
+}
+>>>>>>> 37f4fda1810bd2cd5d23a952becb77078fa57064

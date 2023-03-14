@@ -1,7 +1,11 @@
-.amenities__info {
-    background-color: rgba(0, 0, 0, 0.082);
-    
-    
+.amenities__info{
+ padding-left: 10px;
 }
 
 
+.amenities_img {
+    
+    display: flex;
+    
+
+}

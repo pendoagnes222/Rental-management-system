@@ -3,8 +3,10 @@ import './Home.css'
 import Banner from "./Banner";
 import Card from "./Card";
 import About from "./About";
+import './Card.css'
 
 import Service from "./Service";
+import Amenities from "./Amenities";
 
 
 
@@ -14,7 +16,7 @@ function Home() {
     return (
         <div className="home">
         <Banner />
-        <h1>Top-rated service apartment in Nairobi</h1>
+        <h1>Top-rated service apartment in Nairobi bb</h1>
         <div className='home__section'>
             
              <Card 
@@ -45,7 +47,7 @@ function Home() {
             price="£130/night"
             />
             <Card 
-            src="https://thespaces.com/wp-content/uploads/2017/08/Courtesy-of-Airbnb.jpg"
+            src="https://thespaces.com/wp-content/uploads/2017/08/Courtesy-of-Airbnb.jpg" 
             title="serviced apartment in Nairobi"
             description="Enjoy the amazing sights of kenya with this stunning house"
             price="£350/night"
@@ -58,6 +60,7 @@ function Home() {
         
             />
         </div>
+<<<<<<< HEAD
 
         <h1>Serviced apartment in Nairobi</h1>
         <div className="amenities">
@@ -78,6 +81,7 @@ function Home() {
             price="£130/night"/>
 
         </div>
+        
         <div className="amenities">
             <Card 
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHdi_ssWLxJ_kC6HO_qxRxv_i-BX-TzSiB7A&usqp=CAU"
@@ -96,10 +100,37 @@ function Home() {
             price="£130/night"/>
 
         </div>
+
+        <div className="amenities">
+        <Card 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHdi_ssWLxJ_kC6HO_qxRxv_i-BX-TzSiB7A&usqp=CAU"
+            title="serviced apartment in Nairobi"
+            description="Superhost with a stunning view of the beachside "
+            price="£130/night"/>
+            <Card 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWVSqNUpnk2SFkR4XEpQf6e26BAnka0VtrEg&usqp=CAU"
+            title="serviced apartment in Nairobi"
+            description="Superhost with a stunning view of the beachside "
+            price="£130/night"/>
+            <Card 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXVt-sAkBm5hbTgRPhaa59Oras3qC5Va5ZfA&usqp=CAU"
+            title="serviced apartment in Nairobi"
+            description="Superhost with a stunning view of the beachside "
+            price="£130/night"/>
+        </div>
+        
+        
         <div>
+=======
+        <div className="amenities">
+            <Amenities />
+                    
+    </div>
+        <div className="service">
+>>>>>>> 37f4fda1810bd2cd5d23a952becb77078fa57064
             <Service />
         </div>
-        <div className="about">
+       <div className="about">
             <About />
         </div>
 
