@@ -3,8 +3,10 @@ import './Home.css'
 import Banner from "./Banner";
 import Card from "./Card";
 import About from "./About";
+import './Card.css'
 
 import Service from "./Service";
+import Amenities from "./Amenities";
 
 
 
@@ -14,7 +16,7 @@ function Home() {
     return (
         <div className="home">
         <Banner />
-        <h1>Top-rated service apartment in Nairobi</h1>
+        <h1>Top-rated service apartment in Nairobi bb</h1>
         <div className='home__section'>
             
              <Card 
@@ -44,7 +46,7 @@ function Home() {
             price="£130/night"
             />
             <Card 
-            src="https://thespaces.com/wp-content/uploads/2017/08/Courtesy-of-Airbnb.jpg"
+            src="https://thespaces.com/wp-content/uploads/2017/08/Courtesy-of-Airbnb.jpg" 
             title="serviced apartment in Nairobi"
             description="Enjoy the amazing sights of kenya with this stunning house"
             price="£350/night"
@@ -57,6 +59,7 @@ function Home() {
         
             />
         </div>
+<<<<<<< HEAD
 
         <h1>Serviced apartment in Nairobi</h1>
         <div className="amenities">
@@ -117,9 +120,16 @@ function Home() {
         
         
         <div>
+=======
+        <div className="amenities">
+            <Amenities />
+                    
+    </div>
+        <div className="service">
+>>>>>>> 37f4fda1810bd2cd5d23a952becb77078fa57064
             <Service />
         </div>
-        <div className="about">
+       <div className="about">
             <About />
         </div>
 
