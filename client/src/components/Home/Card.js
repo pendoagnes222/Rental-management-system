@@ -1,8 +1,9 @@
 import React from 'react'
 import './Card.css'
 
-function Card( {src, title, description, price}) {
+function Card( {src, title, description, price, viewImagesUrl}) {
   return (
+    <a href={viewImagesUrl}>
     <div className='card'>
         <img src={src} alt="" />
         <div className='card__info'>
@@ -12,6 +13,7 @@ function Card( {src, title, description, price}) {
         </div>
       
     </div>
+    </a>
   )
 }
 
