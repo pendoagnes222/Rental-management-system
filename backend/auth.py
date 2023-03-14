@@ -27,8 +27,6 @@ logIn_model = auth_ns.model(
     }
 )
 
-
-
 @auth_ns.route('/signup')
 class signUp(Resource):
     """sign up user"""
@@ -54,13 +52,15 @@ class signUp(Resource):
 
         return make_response(jsonify({"message":"User created successfully"}),201)
     
-@auth_ns.route('/image_upload', methods=['POST'])
+@auth_ns.route('/image_upload')
 class uploadImage(Resource):
     """Upload Rental images"""
 
     @auth_ns.expect(Image_Upload)
     def post(self):
-        filename = request.form['filename']
+
+
+        filename = request.files['filename']
         image = request.files['image'].read()
         new_image = Image_Upload(filename=filename, image=image)
         new_image.save()
