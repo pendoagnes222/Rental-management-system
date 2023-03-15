@@ -1,6 +1,6 @@
 from flask import Flask,jsonify, request, make_response
 from flask_restx import Resource,Namespace,fields
-from models import User
+from models import Image_Upload, User
 from werkzeug.security import generate_password_hash,check_password_hash
 from flask_jwt_extended import (JWTManager,
 create_access_token,create_refresh_token,
@@ -27,8 +27,6 @@ logIn_model = auth_ns.model(
     }
 )
 
-
-
 @auth_ns.route('/signup')
 class signUp(Resource):
     """sign up user"""
@@ -53,6 +51,20 @@ class signUp(Resource):
         new_user.save()
 
         return make_response(jsonify({"message":"User created successfully"}),201)
+    
+@auth_ns.route('/image_upload')
+class uploadImage(Resource):
+    """Upload Rental images"""
+
+    @auth_ns.expect(Image_Upload)
+    def post(self):
+
+
+        filename = request.files['filename']
+        image = request.files['image'].read()
+        new_image = Image_Upload(filename=filename, image=image)
+        new_image.save()
+        return make_response(jsonify({'message': 'Image uploaded successfully!'}),201)
     
 @auth_ns.route('/login')
 class logIn(Resource):

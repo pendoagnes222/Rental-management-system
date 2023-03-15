@@ -71,3 +71,23 @@ class User(db.Model):
     def save(self):
         db.session.add(self)
         db.session.commit()
+
+
+
+#Image upload model
+"""
+class Image_Upload:
+    id:integer
+    filename:string
+    image:Image
+    
+"""
+
+class Image_Upload(db.Model):
+    id=db.Column(db.Integer,primary_key=True)
+    filename=db.Column(db.String(255),nullable=False)
+    image=db.Column(db.LargeBinary,nullable=False)
+    
+    def save(self):
+        db.session.add(self)
+        db.session.commit()

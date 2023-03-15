@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_restx import Api
 from config import DevConfig
-from models import Rental_Property, User
+from models import Image_Upload, Rental_Property, User
 from exts import db
 from flask_migrate import Migrate
 from flask_jwt_extended import JWTManager
@@ -37,8 +37,8 @@ def create_app(config):
             return {
                 "db":db,
                 "Rental_Property":Rental_Property,
-                "User":User
+                "User":User,
+                "Image_Upload":Image_Upload
             }
-
 
     return app
