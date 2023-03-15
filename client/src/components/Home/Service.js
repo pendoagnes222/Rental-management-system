@@ -13,18 +13,18 @@ function Services() {
         <Card  
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVooZK0-yXD07UrYjgMxDwLaUBOvOuu9Z-Xw&usqp=CAU"
             title="serviced apartment in Nairobi"
-            description="Superhost with a stunning view of the beachside "
+            description="Lavish 3bedroom in South C "
            />
 
          <Card  
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFCjZpC0qDyk3L4kmR-Xn0GMF1EsFJTNAogA&usqp=CAU"
-            title="serviced apartment in Nairobi"
-            description="Superhost with a stunning view of the beachside "
+            title="Cosy 1Bedroom in Kileleshwa"
+            description="Cozy 1Bedroom flat in Pangani "
            />
            <Card  
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaUa9Gqf9gwZUgGN0LtRjs5fS-3K2juZLC6Q&usqp=CAU"
             title="serviced apartment in Nairobi"
-            description="Superhost with a stunning view of the beachside "
+            description="Lavish 4Bedroom in Lavignton"
            />
             
             
@@ -35,17 +35,17 @@ function Services() {
         <Card  
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzJIIUWE8Ryl2xc1orgCdkW8stzCZbmysWng&usqp=CAU"
             title="serviced apartment in Nairobi"
-            description="Superhost with a stunning view of the beachside "
+            description="Luxury Studio apartment in Kilimani"
            />
        <Card  
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFCjZpC0qDyk3L4kmR-Xn0GMF1EsFJTNAogA&usqp=CAU"
             title="serviced apartment in Nairobi"
-            description="Superhost with a stunning view of the beachside "
+            description=" 1 Bedroom flat in Westlands"
              />
       <Card  
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHdi_ssWLxJ_kC6HO_qxRxv_i-BX-TzSiB7A&usqp=CAU"
             title="serviced apartment in Nairobi"
-            description="Superhost with a stunning view of the beachside "
+            description="Cozy 2Bedroom apartment in Savannah "
            />
           
         </div>
@@ -54,23 +54,23 @@ function Services() {
          <Card  
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMdHOwbwhGbbVBbqRR3Wv8Zt84EJEnJ015Ww&usqp=CAU"
             title="serviced apartment in Nairobi"
-            description="Superhost with a stunning view of the beachside "
+            description="Stunning 3Bedroom in Westlands "
            />
          <Card  
             
            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHdi_ssWLxJ_kC6HO_qxRxv_i-BX-TzSiB7A&usqp=CAU"
            title="serviced apartment in Nairobi"
-           description="Superhost with a stunning view of the beachside "
+           description="2Bedroom Fully furnished in Riverside "
           />
      <Card  
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHdi_ssWLxJ_kC6HO_qxRxv_i-BX-TzSiB7A&usqp=CAU"
             title="serviced apartment in Nairobi"
-            description="Superhost with a stunning view of the beachside "
+            description="4Bedroom Apartment in Westlands"
             />
 
 
  </div>
-        <h2>center</h2>
+      
     </div>
     
   )
