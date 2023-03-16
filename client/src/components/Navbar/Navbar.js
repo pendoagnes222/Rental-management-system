@@ -1,40 +1,42 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Navbar.css'
-import {MenuItems } from './MenuItems'
-import logo from '../Images/Airbnb-logo.jpg' 
-import { Button } from '../Button'
+import { FaSearch , FaAngleDown, FaUserCircle, FaGlobe} from 'react-icons/fa'
 
 
-class Navbar extends Component {
-    state = { clicked: false}
+/*import SearchIcon from "@material-ui/icons/Search";
+import LanguageIcon from "@material-ui/icons/Language";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { Avatar } from "@material-ui/core";
+import { Link } from "react-router-dom";*/
+
+function Navbar() {
+  return (
+    <div className='header'>
     
-    handleClick = () =>{
-        this.setState({clicked: !this.state.clicked})
-    }
-    render(){
-        return(
-            <nav className='NavbarItems'>
-                <img className='navbar-logo' src={logo} alt=''/>
-                <div className='menu-icons' onClick={this.handleClick}>
-                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+        <img
+            className="header__icon"
+            src="https://i.pinimg.com/originals/3c/bf/be/3cbfbe148597341fa56f2f87ade90956.png"
+            alt=""
+        
+        />
+        <div className='header__center'>
+                <input type="text" />
+                   <FaSearch/>
+         </div>
 
-                </div>
-                <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
-                    {MenuItems.map((item, index) =>{
-                        return(
-                            <li key={index}>
-                                <a className={item.cName} href={item.url}>
-                                 {item.titles}   
-                                </a>
-                             </li>  
-                        )
+         <div className='header__right'>
+                <p>Become a host</p>
+                <FaGlobe/>
+                <FaAngleDown />
+                <FaUserCircle />
+                
+            </div>
+        
 
-                    })}
-                </ul>
-                <Button>Sign Up</Button>
-            </nav>
-        )
-    }
+   
+    
+</div>
+)
 }
 
-export default Navbar
+export default Navbar;
