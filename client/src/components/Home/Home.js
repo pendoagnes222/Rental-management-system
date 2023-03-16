@@ -7,6 +7,8 @@ import './Card.css'
 
 import Service from "./Service";
 import Amenities from "./Amenities";
+import LoginPage from "./LoginPage";
+
 
 
 
@@ -69,6 +71,7 @@ function Home() {
        <div className="about">
             <About />
         </div>
+        
 
         
     
