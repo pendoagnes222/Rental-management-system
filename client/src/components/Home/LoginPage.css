@@ -1,11 +1,11 @@
 .register{
-    max-width: 978px;
+    max-width: 100%;
     width: 100vw;
     display:flex;
     border: 1px solid #e9ecef;
     border-radius: 5px;
     /* box-shadow: 1px 3px 10px #e9ecef; */
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.096);
   }
 
   .register span{
@@ -51,7 +51,9 @@
   .register .col-1{
     margin: auto;
     padding: 3em 0;
+    
   }
+  
 
   
   @media screen and (min-width: 860px)  {

@@ -1,8 +1,8 @@
 import React from 'react'
-import './Form.css'
+import './LoginPage.css'
 import { useForm } from 'react-hook-form';
 
-export default function Form() {
+export default function LoginPage() {
 
     const { register, handleSubmit,  formState: { errors } } = useForm()
     const onSubmit = data => console.log(data);

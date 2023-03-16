@@ -8,8 +8,9 @@ import LanguageIcon from "@material-ui/icons/Language";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Avatar } from "@material-ui/core";
 import { Link } from "react-router-dom";*/
-
+import { useNavigate} from "react-router-dom"
 function Navbar() {
+  let navigate = useNavigate();
   return (
     <div className='header'>
     
@@ -26,9 +27,12 @@ function Navbar() {
 
          <div className='header__right'>
                 <p>Become a host</p>
-                <FaGlobe/>
+                <FaGlobe className='language'/>
                 <FaAngleDown />
-                <FaUserCircle />
+                <FaUserCircle  className='user__icon'
+               onClick={() =>{
+            navigate("/loginpage");
+           }} />
                 
             </div>
         
