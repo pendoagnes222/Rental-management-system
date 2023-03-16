@@ -20,14 +20,14 @@ function Home() {
         <div className='home__section'>
             
              <Card 
-             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUlhuKexoWBekJRxsVR4QHkrWJnCpqrw9iGXmJ_y48fis3h8s6Y24x_OTaba2hfGkQ8T0&usqp=CAU"
+             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsM11SW3DymOkDNUCj7_GEewdu0DYTssrQDw&usqp=CAU"
             title="Condo in Nairobi"
             description="Unique activities we can do together, led by a world of hosts."
-            viewImagesUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUlhuKexoWBekJRxsVR4QHkrWJnCpqrw9iGXmJ_y48fis3h8s6Y24x_OTaba2hfGkQ8T0&usqp=CAU"
+            viewImagesUrl="https:bn:ANd9GcSUlhuKexoWBekJRxsVR4QHkrWJnCpqrw9iGXmJ_y48fis3h8s6Y24x_OTaba2hfGkQ8T0&usqp=CAU"
             />
             
             <Card 
-             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeo5B0SRQfEvw6r9iZicKWJW5ykXfhQp3syjyff3xhwwSaOHSOnRTKs2T3Lt-L5vesWY4&usqp=CAU"
+             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwdLQQoUu7kjYqlHh4bcTQoGt7-FXaCo68WA&usqp=CAU"
             title="Rental unit in Nairobi"
             description="Unique activities we can do together, led by a world of hosts."
             />
@@ -41,13 +41,13 @@ function Home() {
         </div>
         <div className="home__section">
         <Card 
-             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUlhuKexoWBekJRxsVR4QHkrWJnCpqrw9iGXmJ_y48fis3h8s6Y24x_OTaba2hfGkQ8T0&usqp=CAU"
+             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJbzzyAwOm4SeZARzUeUPkJk0QU8W08js2Ng&usqp=CAU"
             title="Rental unit in Lavington"
             description="Unique activities we can do together, led by a world of hosts."
             viewImagesUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUlhuKexoWBekJRxsVR4QHkrWJnCpqrw9iGXmJ_y48fis3h8s6Y24x_OTaba2hfGkQ8T0&usqp=CAU"
             />
             <Card 
-             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUlhuKexoWBekJRxsVR4QHkrWJnCpqrw9iGXmJ_y48fis3h8s6Y24x_OTaba2hfGkQ8T0&usqp=CAU"
+             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkOX6FFVED8p_DNhbfM7-zRz8x974lhpSumJg_EZRr1BZGcrAkoJ1aEEb_TKTFgIFRpcE&usqp=CAU"
             title="condo in Kilimani"
             description="Unique activities we can do together, led by a world of hosts."
             viewImagesUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUlhuKexoWBekJRxsVR4QHkrWJnCpqrw9iGXmJ_y48fis3h8s6Y24x_OTaba2hfGkQ8T0&usqp=CAU"
