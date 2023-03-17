@@ -7,7 +7,7 @@ import './Card.css'
 
 import Service from "./Service";
 import Amenities from "./Amenities";
-import LoginPage from "./LoginPage";
+
 
 
 
@@ -24,40 +24,46 @@ function Home() {
              <Card 
              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsM11SW3DymOkDNUCj7_GEewdu0DYTssrQDw&usqp=CAU"
             title="Condo in Nairobi"
-            description="Well-appointed apartments with hotel-lik amenities"
+            description="Tranquility inside. City adventures outside. Discover both in Nairobi's apartments."
+            price="$53 nights"
             viewImagesUrl="https:bn:ANd9GcSUlhuKexoWBekJRxsVR4QHkrWJnCpqrw9iGXmJ_y48fis3h8s6Y24x_OTaba2hfGkQ8T0&usqp=CAU"
             />
             
             <Card 
              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwdLQQoUu7kjYqlHh4bcTQoGt7-FXaCo68WA&usqp=CAU"
             title="Rental unit in Nairobi"
-            description="Convinient location with everyday essentials"
+            description="With everything you’ve ever dreamt of at your fingertips, you may not want to leave."
+            price="$32 nights"
             />
             
             
             <Card 
              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzLSC8muoGRkj4AV0gKwxXXrP6JHwYznBqO4FHaEWDACxFeJ4Vz_2-bp4WT4mJg_M1DLo&usqp=CAU"
              title="Condo in Westlands"
-             description="Comfortable private places, with room for friends or family."
+             description="City. Beach. Eat. Shop. Repeat. Discover how fun life can be at Westlands flats."
+             price="$66 nights"
             />
         </div>
         <div className="home__section">
         <Card 
              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJbzzyAwOm4SeZARzUeUPkJk0QU8W08js2Ng&usqp=CAU"
             title="Rental unit in Lavington"
-            description="A space thats all yours, with well furnished rooms "
+            description="Home is where the amenities are, living where you love means loving your life. "
+            price="$40 nights"
             viewImagesUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUlhuKexoWBekJRxsVR4QHkrWJnCpqrw9iGXmJ_y48fis3h8s6Y24x_OTaba2hfGkQ8T0&usqp=CAU"
             />
             <Card 
              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkOX6FFVED8p_DNhbfM7-zRz8x974lhpSumJg_EZRr1BZGcrAkoJ1aEEb_TKTFgIFRpcE&usqp=CAU"
             title="condo in Kilimani"
-            description="Comfortable private places, stunning furnished rooms"
+            description="Outdoor adventures for every season. Cozy inside retreat for every day.History Remade."
+            price="$77 nights"
             viewImagesUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUlhuKexoWBekJRxsVR4QHkrWJnCpqrw9iGXmJ_y48fis3h8s6Y24x_OTaba2hfGkQ8T0&usqp=CAU"
             />
             <Card 
              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUlhuKexoWBekJRxsVR4QHkrWJnCpqrw9iGXmJ_y48fis3h8s6Y24x_OTaba2hfGkQ8T0&usqp=CAU"
             title="Condo in South B"
-            description="Apartment with luxurios furnishing. Its private and spacious"
+            description="Where skyline views, modern luxury, and amenities seamlessly merge.Dream Big,live Well"
+            price="$52 nights"
             viewImagesUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUlhuKexoWBekJRxsVR4QHkrWJnCpqrw9iGXmJ_y48fis3h8s6Y24x_OTaba2hfGkQ8T0&usqp=CAU"
             />
         </div>

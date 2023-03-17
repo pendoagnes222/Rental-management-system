@@ -88,12 +88,16 @@
 }
 
 .footer__social{
-  margin-left: 900px;
+  margin-left: 1000px;
   font-size: 25px;
   margin-top: -10px;
+  justify-content: space-between;
+  
   
     
 }
+
+
 
 
 
