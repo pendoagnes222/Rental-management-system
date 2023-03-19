@@ -14,7 +14,9 @@ import Amenities from "./Amenities";
 
 
 
+
 function Home() {
+    
     return (
         <div className="home">
         <Banner />
@@ -45,12 +47,11 @@ function Home() {
             />
         </div>
         <div className="home__section">
-        <Card 
+        <Card
              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJbzzyAwOm4SeZARzUeUPkJk0QU8W08js2Ng&usqp=CAU"
             title="Rental unit in Lavington"
             description="Home is where the amenities are, living where you love means loving your life. "
             price="$40 nights"
-            viewImagesUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUlhuKexoWBekJRxsVR4QHkrWJnCpqrw9iGXmJ_y48fis3h8s6Y24x_OTaba2hfGkQ8T0&usqp=CAU"
             />
             <Card 
              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkOX6FFVED8p_DNhbfM7-zRz8x974lhpSumJg_EZRr1BZGcrAkoJ1aEEb_TKTFgIFRpcE&usqp=CAU"

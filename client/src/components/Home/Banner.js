@@ -4,7 +4,9 @@ import Search from './Search';
 
 
 
+
 function Banner() {
+    
     const [showSearch, setShowSearch] = useState
     (false);
   

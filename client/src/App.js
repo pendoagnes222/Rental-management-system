@@ -7,6 +7,8 @@ import Navbar from './components/Navbar/Navbar';
 import {BrowserRouter as Router, Routes,Route} from "react-router-dom"
 import Amenities from './components/Home/Amenities';
 import LoginPage from './components/Home/LoginPage';
+import SearchPage from './components/Navbar/SearchPage';
+import Gallery from './components/Gallery';
 
 
 
@@ -22,6 +24,8 @@ function App() {
          <Route path="/" element={<Home />} />
          <Route path="/amenities" element={<Amenities />} />
          <Route path="/loginpage" element={<LoginPage/>} />
+         <Route path="/gallery" element={<Gallery />} />
+         <Route path="/searchpage" element={<SearchPage />} />
           </Routes>
         <Footer />
     </Router>
