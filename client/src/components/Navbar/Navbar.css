@@ -24,13 +24,19 @@
     height: 40px;
     border: 1px solid lightgray;
     border-radius: 999px;
+    background-color: #ff7779;
   }
   
-  .header__center > input {
+  .header__center > button {
     border: none;
     padding: 10px;
     outline-width: 0;
-    width: 250px; 
+    width: 150px; 
+    background-color: rgba(128, 128, 128, 0);
+  }
+
+  .header__center:hover {
+      background-color: rgba(128, 128, 128, 0.041);
   }
   
   .header__right {

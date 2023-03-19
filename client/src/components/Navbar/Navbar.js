@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import { FaSearch , FaAngleDown, FaUserCircle, FaGlobe} from 'react-icons/fa'
+import { FaAngleDown, FaUserCircle, FaGlobe} from 'react-icons/fa'
 
 
 /*import SearchIcon from "@material-ui/icons/Search";
@@ -10,6 +10,7 @@ import { Avatar } from "@material-ui/core";
 import { Link } from "react-router-dom";*/
 import { Link, useNavigate} from "react-router-dom"
 function Navbar() {
+  
   let navigate = useNavigate();
   return (
     <div className='header'>
@@ -22,8 +23,11 @@ function Navbar() {
         />
         </Link>
         <div className='header__center'>
-                <input type="text" />
-                   <FaSearch/>
+        <button onClick={() => navigate('/searchpage')}
+             variant='outlined'>Check Availability
+            </button>
+                {/*<input type="text" />
+                   <FaSearch/>*/}
          </div>
 
          <div className='header__right'>
