@@ -7,6 +7,8 @@ import './Card.css'
 
 import Service from "./Service";
 import Amenities from "./Amenities";
+import { Link } from "react-router-dom";
+
 
 
 
@@ -22,14 +24,16 @@ function Home() {
         <Banner />
         <h1>Top-rated service apartment in Nairobi </h1>
         <div className='home__section'>
-            
+             <Link to="/gallery">
              <Card 
              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsM11SW3DymOkDNUCj7_GEewdu0DYTssrQDw&usqp=CAU"
             title="Condo in Nairobi"
             description="Tranquility inside. City adventures outside. Discover both in Nairobi's apartments."
             price="$53 nights"
-            viewImagesUrl="https:bn:ANd9GcSUlhuKexoWBekJRxsVR4QHkrWJnCpqrw9iGXmJ_y48fis3h8s6Y24x_OTaba2hfGkQ8T0&usqp=CAU"
             />
+            </Link>
+            
+            
             
             <Card 
              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwdLQQoUu7kjYqlHh4bcTQoGt7-FXaCo68WA&usqp=CAU"
