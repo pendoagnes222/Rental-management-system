@@ -1,14 +1,14 @@
 import React, {useState} from "react";
-import './Gallery.css'
-import Img3 from './Images/kitchen2.jpeg'
-import Img2 from './Images/dinning2.jpeg'
-import Img1 from './Images/bd3.jpeg'
-import Img5 from './Images/br2.jpeg'
-import Img4 from './Images/laundry2.jpeg'
-import Img6 from './Images/gym2.jpeg'
+import './Gallery1.css'
+import Img1 from '../Images/index.jpeg'
+import Img2 from '../Images/index2.jpeg'
+import Img3 from '../Images/index3.jpeg'
+import Img4 from '../Images/index4.jpeg'
+import Img5 from '../Images/index5.jpeg'
+import Img6 from '../Images/index6.jpeg'
 
 
-const Gallery = () => {
+const Gallery5 = () => {
 
     let data = [
         {
@@ -45,6 +45,7 @@ const Gallery = () => {
     }
    return(
    <>
+    <h1>Hello 5</h1>
    <div className= {model? "model open" : "model"}>
     <img src={tempimgsrc}  alt=""/>
    </div>
@@ -62,5 +63,5 @@ const Gallery = () => {
    )
 }
 
-export default Gallery
+export default Gallery5
 

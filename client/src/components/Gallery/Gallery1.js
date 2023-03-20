@@ -1,14 +1,16 @@
 import React, {useState} from "react";
-import './Gallery.css'
-import Img3 from './Images/kitchen2.jpeg'
-import Img2 from './Images/dinning2.jpeg'
-import Img1 from './Images/bd3.jpeg'
-import Img5 from './Images/br2.jpeg'
-import Img4 from './Images/laundry2.jpeg'
-import Img6 from './Images/gym2.jpeg'
+import './Gallery1.css'
+import Img3 from '../Images/kitchen1.jpeg'
+import Img2 from '../Images/dinning1.jpeg'
+import Img1 from '../Images/bd1.jpeg'
+import Img5 from '../Images/br1.jpeg'
+import Img4 from '../Images/laundry1.jpeg'
+import Img6 from '../Images/gym1.jpeg'
 
 
-const Gallery = () => {
+
+
+const Gallery1 = () => {
 
     let data = [
         {
@@ -44,9 +46,12 @@ const Gallery = () => {
         setModel(true);
     }
    return(
+
    <>
+   <h1>hello</h1>
    <div className= {model? "model open" : "model"}>
     <img src={tempimgsrc}  alt=""/>
+    
    </div>
    <div className="gallery">
      {data.map((item, index) => {
@@ -62,5 +67,5 @@ const Gallery = () => {
    )
 }
 
-export default Gallery
+export default Gallery1
 

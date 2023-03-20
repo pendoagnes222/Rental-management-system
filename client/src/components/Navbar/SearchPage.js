@@ -81,6 +81,69 @@ function SearchPage() {
                 price="$90 / night"
                 total="$650 total"
             />
+            <SearchResult
+                img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH8K8ZaadK8zwcMxsWQT7klHibxfs9yQq09Q&usqp=CAU"
+                location="Private room in Kileleshwa"
+                title="Stay at this spacious Ravila House"
+                description="1 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen · Free parking · Washing Machine"
+                star={4.73}
+                price="$30 / night"
+                total="$117 total"
+            />
+            <SearchResult
+                img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH8K8ZaadK8zwcMxsWQT7klHibxfs9yQq09Q&usqp=CAU"
+                location="Private room in Kileleshwa"
+                title="Stay at this spacious Ravila House"
+                description="1 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen · Free parking · Washing Machine"
+                star={4.73}
+                price="$30 / night"
+                total="$117 total"
+            />
+            <SearchResult
+                img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH8K8ZaadK8zwcMxsWQT7klHibxfs9yQq09Q&usqp=CAU"
+                location="Private room in Kileleshwa"
+                title="Stay at this spacious Ravila House"
+                description="1 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen · Free parking · Washing Machine"
+                star={4.73}
+                price="$30 / night"
+                total="$117 total"
+            />
+            <SearchResult
+                img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH8K8ZaadK8zwcMxsWQT7klHibxfs9yQq09Q&usqp=CAU"
+                location="Private room in Kileleshwa"
+                title="Stay at this spacious Ravila House"
+                description="1 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen · Free parking · Washing Machine"
+                star={4.73}
+                price="$30 / night"
+                total="$117 total"
+            />
+            <SearchResult
+                img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH8K8ZaadK8zwcMxsWQT7klHibxfs9yQq09Q&usqp=CAU"
+                location="Private room in Kileleshwa"
+                title="Stay at this spacious Ravila House"
+                description="1 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen · Free parking · Washing Machine"
+                star={4.73}
+                price="$30 / night"
+                total="$117 total"
+            />
+            <SearchResult
+                img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH8K8ZaadK8zwcMxsWQT7klHibxfs9yQq09Q&usqp=CAU"
+                location="Private room in Kileleshwa"
+                title="Stay at this spacious Ravila House"
+                description="1 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen · Free parking · Washing Machine"
+                star={4.73}
+                price="$30 / night"
+                total="$117 total"
+            />
+            <SearchResult
+                img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH8K8ZaadK8zwcMxsWQT7klHibxfs9yQq09Q&usqp=CAU"
+                location="Private room in Kileleshwa"
+                title="Stay at this spacious Ravila House"
+                description="1 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen · Free parking · Washing Machine"
+                star={4.73}
+                price="$30 / night"
+                total="$117 total"
+            />
     </div>
   )
 }
