@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import './Gallery1.css'
-import Img3 from '../Images/kitchen3.jpeg'
+import Img3 from '../Images/kitchen4.jpeg'
 import Img2 from '../Images/dinning3.jpeg'
-import Img1 from '../Images/bd2.jpeg'
+import Img1 from '../Images/bd5.jpeg'
 import Img5 from '../Images/br3.jpeg'
 import Img4 from '../Images/laundry1.jpeg'
 import Img6 from '../Images/gym3.jpeg'
@@ -46,7 +46,7 @@ const Gallery2 = () => {
     }
    return(
    <>
-   <h1>Hello 2</h1>
+   
    <div className= {model? "model open" : "model"}>
     <img src={tempimgsrc}  alt=""/>
    </div>

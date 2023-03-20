@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import './Gallery1.css'
 import Img3 from '../Images/kitchen1.jpeg'
 import Img2 from '../Images/dinning1.jpeg'
-import Img1 from '../Images/bd1.jpeg'
+import Img1 from '../Images/bd6.jpeg'
 import Img5 from '../Images/br1.jpeg'
 import Img4 from '../Images/laundry1.jpeg'
 import Img6 from '../Images/gym1.jpeg'
@@ -48,7 +48,6 @@ const Gallery1 = () => {
    return(
 
    <>
-   <h1>hello</h1>
    <div className= {model? "model open" : "model"}>
     <img src={tempimgsrc}  alt=""/>
     

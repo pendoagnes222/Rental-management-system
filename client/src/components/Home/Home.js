@@ -24,7 +24,7 @@ function Home() {
         <Banner />
         <h1>Top-rated service apartment in Nairobi </h1>
         <div className='home__section'>
-             <Link to="/gallery">
+             <Link to="/gallery5">
              <Card 
              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsM11SW3DymOkDNUCj7_GEewdu0DYTssrQDw&usqp=CAU"
             title="Condo in Nairobi"

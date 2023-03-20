@@ -46,7 +46,7 @@ const Gallery6 = () => {
     }
    return(
    <>
-    <h1>Hello 5</h1>
+    
    <div className= {model? "model open" : "model"}>
     <img src={tempimgsrc}  alt=""/>
    </div>
