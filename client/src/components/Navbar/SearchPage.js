@@ -81,69 +81,6 @@ function SearchPage() {
                 price="$90 / night"
                 total="$650 total"
             />
-            <SearchResult
-                img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt8BmDLw43P4BzoGYIxLJv8A6t-f007rumnbVb0EkBtkJkmTiwjmKr8Ge6Di4f41TZohw&usqp=CAU"
-                location="Private room in Westlands"
-                title="Stunning newly furnished house"
-                description="1 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen · Free parking · Washing Machine"
-                star={4.73}
-                price="$41 / night"
-                total="$117 total"
-            />
-            <SearchResult
-                img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVxFN_aEoY-0spCwqrH2K0w3GKjzbOfZEh1oAlyEmsm4409Tyfjr6fydR7kh_v0ZhV9V8&usqp=CAU"
-                location="Private room in south c"
-                title="Spacious apartment in South c"
-                description="1 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen · Free parking · Washing Machine"
-                star={4.73}
-                price="$29 / night"
-                total="$80 total"
-            />
-            <SearchResult
-                img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUpzZDvHVi3VsaE8ORGZZzYWmQ74hAPGMCjIIUTocac0-kKngpFNPDlwKsy8fwy2adUFk&usqp=CAU"
-                location="Private room in Lavington"
-                title="Apartment in Lavington"
-                description="1 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen · Free parking · Washing Machine"
-                star={4.73}
-                price="$13 / night"
-                total="$100 total"
-            />
-            <SearchResult
-                img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSqSZdMkCtCRii5X_sHTLIMVWQguaCTYVaoihRm0h-dwcnL2VSEwGu5Bivmq_ndWV2SvY&usqp=CAU"
-                location="Westland house"
-                title="Stay at this spacious Wendli House"
-                description="1 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen · Free parking · Washing Machine"
-                star={4.73}
-                price="$35 / night"
-                total="$117 total"
-            />
-            <SearchResult
-                img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiShgBewA45gso_5wnJ-lEcVzzdfkRgEZTYtEHcOc5WhHDyqSZN_pcxuDiIWvDBtEzKaI&usqp=CAU"
-                location="Kilimani apartments"
-                title="Well furnished flats in Kilimani"
-                description="1 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen · Free parking · Washing Machine"
-                star={4.73}
-                price="$20 / night"
-                total="$221 total"
-            />
-            <SearchResult
-                img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH8K8ZaadK8zwcMxsWQT7klHibxfs9yQq09Q&usqp=CAU"
-                location="Apartment in Pangani"
-                title="Stunning apartments in Pangani"
-                description="1 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen · Free parking · Washing Machine"
-                star={4.73}
-                price="$20 / night"
-                total="$105 total"
-            />
-            <SearchResult
-                img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHzAR3S2bxVd9-jAUd9EddbfkILUPdrzSltA&usqp=CAU"
-                location="Stunning apartmentKileleshwa"
-                title="Stay at this spacious newly furnished house"
-                description="1 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen · Free parking · Washing Machine"
-                star={4.73}
-                price="$38 / night"
-                total="$217 total"
-            />
     </div>
   )
 }
