@@ -81,6 +81,7 @@ function SearchPage() {
                 price="$90 / night"
                 total="$650 total"
             />
+<<<<<<< HEAD
             <SearchResult
                 img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH8K8ZaadK8zwcMxsWQT7klHibxfs9yQq09Q&usqp=CAU"
                 location="Private room in Kileleshwa"
@@ -144,6 +145,8 @@ function SearchPage() {
                 price="$30 / night"
                 total="$117 total"
             />
+=======
+>>>>>>> 72ecb2c ([UPDATE]: Changes)
     </div>
   )
 }

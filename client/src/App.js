@@ -8,6 +8,7 @@ import {BrowserRouter as Router, Routes,Route} from "react-router-dom"
 import Amenities from './components/Home/Amenities';
 import LoginPage from './components/Home/LoginPage';
 import SearchPage from './components/Navbar/SearchPage';
+<<<<<<< HEAD
 import Gallery1 from './components/Gallery/Gallery1';
 
 import Gallery2 from './components/Gallery/Gallery2';
@@ -17,6 +18,9 @@ import Gallery5 from './components/Gallery/Gallery5';
 import Gallery6 from './components/Gallery/Gallery6';
 
 
+=======
+import Gallery from './components/Gallery';
+>>>>>>> 72ecb2c ([UPDATE]: Changes)
 
 
 
@@ -32,6 +36,7 @@ function App() {
          <Route path="/" element={<Home />} />
          <Route path="/amenities" element={<Amenities />} />
          <Route path="/loginpage" element={<LoginPage/>} />
+<<<<<<< HEAD
          
          <Route path="/searchpage" element={<SearchPage />} />
          <Route path="/gallery1" element={<Gallery1 />} />
@@ -41,6 +46,10 @@ function App() {
          <Route path="/gallery5" element={<Gallery5 />} />
          <Route path="/gallery6" element={<Gallery6 />} />
          
+=======
+         <Route path="/gallery" element={<Gallery />} />
+         <Route path="/searchpage" element={<SearchPage />} />
+>>>>>>> 72ecb2c ([UPDATE]: Changes)
           </Routes>
         <Footer />
     </Router>

@@ -2,7 +2,6 @@ import React from 'react'
 import './Navbar.css'
 import { FaAngleDown, FaUserCircle, FaGlobe} from 'react-icons/fa'
 
-
 /*import SearchIcon from "@material-ui/icons/Search";
 import LanguageIcon from "@material-ui/icons/Language";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
@@ -31,7 +30,7 @@ function Navbar() {
          </div>
 
          <div className='header__right'>
-                <p>Become a host</p>
+                <h6><Link to="/LoginPage">Post my apartment</Link></h6>
                 <FaGlobe className='language'/>
                 <FaAngleDown />
                 <FaUserCircle  className='user__icon'

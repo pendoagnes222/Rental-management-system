@@ -1,5 +1,6 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './LoginPage.css'
+import { Link } from 'react-router-dom'
 import { useForm } from 'react-hook-form';
 
 export default function LoginPage() {
@@ -11,17 +12,33 @@ export default function LoginPage() {
     <section>
         <div className="register">
             <div className="col-1">
-                <h2>Sign In</h2>
-                <span>register and enjoy the service</span>
+                <h2>Sign Up</h2>
+               
+                <small>Register to enjoy our services</small>
 
                 <form id='form' className='flex flex-col' onSubmit={handleSubmit(onSubmit)}>
-                    <input type="text" {...register("username")} placeholder='username' />
-                    <input type="text" {...register("password")} placeholder='password' />
-                    <input type="text" {...register("confirmpwd")} placeholder='confirm password' />
-                    <input type="text" {...register("mobile", { required : true, maxLength: 10 })} placeholder='mobile number' />
+                    <input type="text" {...register("username",{ required:true })} placeholder='username' 
+                        
+                    />
+
+                    <input type="text" {...register("mobile", { required : true, maxLength: 10 })} placeholder='mobile number'  />
                     {errors.mobile?.type === "required" && "Mobile Number is required"}
                     {errors.mobile?.type === "maxLength" && "Max Length Exceed"}
-                    <button className='btn'>Sign In</button>
+                
+
+                    <input type="email" {...register("email", { required : true, maxLength: 10 })} placeholder='email' 
+                        
+                    />
+
+                    <input type="password" {...register("password")} placeholder='password' 
+                        
+                    />
+                    <input type="password" {...register("confirmpwd")} placeholder='confirm password' 
+                        
+                    />
+                    
+                    <button className='btn'>Sign Up</button>
+                    <small>Already Registered? <Link to="/LoginPage">Sign In</Link></small>
                 </form>
 
             </div>
