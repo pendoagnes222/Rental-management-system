@@ -13,12 +13,19 @@ function Amenities() {
             />
 
       <Card src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReS0iCmXq09cy1Mo3erYgxnMLycwzUKkEbtQ&usqp=CAU"
-            title="Home is where the pool is."
+            title="Enjoy, relax, soak, and unwind."
             /> 
+
+      <Card src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQBBY357pn9ag0Kq5MwVdi0xqGatVClQg_LA7HlXAMZ7aoA0lRpAZhRB5sNu1ZxCqk1sA&usqp=CAU"
+            title="It's shop o'clock somewhere!"
+            />        
 
       <Card src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0uVkCFZtlxfAOHOG_2TTh9-oaR8bQmcdNdg&usqp=CAU"
             title="Workouts are my happy hour."
-            />      
+            />    
+               
+              
+             
       </div>
 
     </div>
