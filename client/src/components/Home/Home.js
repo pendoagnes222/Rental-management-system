@@ -87,8 +87,9 @@ function Home() {
             <Amenities />
                     
     </div>
-        <div className="service">
-            <Service />
+    <h2>Serviced apartments in Nairobi</h2>
+    <div className="service">
+             <Service />
         </div>
        <div className="about">
             <About />

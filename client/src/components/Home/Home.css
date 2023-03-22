@@ -24,10 +24,17 @@ h1 {
 .service {
     display: flex;
     padding: 30px;
+
     width: 100%;
+    padding-top: 10px;
 
 }
 
+.home > h2 {
+    padding-top: 30px;
+    font-size: 30px;
+    padding-left: 60px;
+}
 .amenities {
     
     display: flex;
