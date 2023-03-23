@@ -1,4 +1,5 @@
 from flask import Flask,jsonify, request, make_response
+from flask_cors import cross_origin
 from flask_restx import Resource,Namespace,fields
 from models import Image_Upload, User
 from werkzeug.security import generate_password_hash,check_password_hash
@@ -15,6 +16,7 @@ signUp_model = auth_ns.model(
     {
         "username":fields.String(),
         "email":fields.String(),
+        "mobileNumber":fields.String(),
         "password":fields.String()
     }
 )
@@ -44,6 +46,7 @@ class signUp(Resource):
         new_user=User(
             username=data.get('username'),
             email=data.get('email'),
+            mobileNumber=data.get('mobile_number'),
             password=generate_password_hash(data.get('password'))
 
         )
