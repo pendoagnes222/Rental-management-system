@@ -22,9 +22,9 @@
     max-width: fit-content;
     padding: 10px;
     height: 40px;
-    border: 1px solid lightgray;
+    border: 1px solid rgba(211, 211, 211, 0.863);
     border-radius: 999px;
-    background-color: #ff7779;
+    background-color: rgba(128, 128, 128, 0.041);
   }
   
   .header__center > button {
@@ -36,23 +36,39 @@
   }
 
   .header__center:hover {
-      background-color: rgba(128, 128, 128, 0.041);
+      background-color: rgba(128, 128, 128, 0.295);
   }
   
   .header__right {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 18vw;
+    width: 14vw;
     margin-right: 80px;
     font-size: 20px;
   }
+  .header__right > button {
+    background-color: rgba(128, 128, 128, 0.349);
+    height: 35px;
+    width: 18vh;
+    font-size: 15px;
+    border: none;
+    
+    border-radius: 15px;
+  }
 
+  .header__right > button:hover {
+    background-color: #d80338af;
+  }
+  .language{
+    color: rgba(0, 0, 0, 0.815);
+  }
   .language:hover{
     color: rgba(0, 0, 0, 0.226);
   }
   .user__icon {
     font-size: 25px;
+    color: gray;
   }
 
   .user__icon:hover{

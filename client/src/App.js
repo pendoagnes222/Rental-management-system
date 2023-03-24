@@ -14,6 +14,8 @@ import Gallery3 from './components/Gallery/Gallery3';
 import Gallery4 from './components/Gallery/Gallery4';
 import Gallery5 from './components/Gallery/Gallery5';
 import Gallery6 from './components/Gallery/Gallery6';
+import SignIn from './components/Home/SignIn';
+
 
 
 
@@ -35,6 +37,7 @@ function App() {
          <Route path="/gallery5" element={<Gallery5 />} />
          <Route path="/gallery6" element={<Gallery6 />} />
          <Route path="/searchpage" element={<SearchPage />} />
+         <Route path="/signin" element={<SignIn/>} />
           </Routes>
         <Footer />
     </Router>

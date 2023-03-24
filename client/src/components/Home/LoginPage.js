@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 import './LoginPage.css'
 import { Link } from 'react-router-dom'
 import { useForm } from 'react-hook-form';
@@ -38,7 +38,7 @@ export default function LoginPage() {
                     />
                     
                     <button className='btn'>Sign Up</button>
-                    <small>Already Registered? <Link to="/LoginPage">Sign In</Link></small>
+                    <small>Already Registered? <Link to="/SignIn">Sign In</Link></small>
                 </form>
 
             </div>
