@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import './LoginPage.css';
+
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { Alert } from 'react-bootstrap';
@@ -10,6 +11,7 @@ export default function LoginPage() {
     //const onSubmit = data => console.log(data);
     const [show, setShow] = useState(false)
     const [serverResponse, setServerResponse] = useState('')
+    
     const onSubmit = (data) => {
 
         if (data.password === data.confirmpwd) {
@@ -86,7 +88,7 @@ export default function LoginPage() {
                         {errors.confirmpwd && <span style={{ color: "red" }}> <small>Confirm password is required</small></span>}
 
                         <button className='btn' onClick={handleSubmit(onSubmit)} >Sign Up</button>
-                        <small>Already Registered? <Link to="/LoginPage">Sign In</Link></small>
+                        <div><small>Already Registered? <Link to="/login">Sign in here</Link></small></div>
                     </form>
 
                 </div>
