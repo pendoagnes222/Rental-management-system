@@ -9,8 +9,8 @@
 # Getting Started
 
     * Run the code and view on the browser via localhost 3000
-   
-   * cd client npm start
+    
+    * cd client npm start
 
 # Technologies used
     
@@ -22,5 +22,5 @@
 
 # Contibutors
 
- *@jobootwori & @pendoagnes222
+* @jobootwori & @pendoagnes222
 
