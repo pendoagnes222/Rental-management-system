@@ -31,7 +31,7 @@
     border: none;
     padding: 10px;
     outline-width: 0;
-    width: 150px; 
+    width: 200px; 
     background-color: rgba(128, 128, 128, 0);
   }
 
@@ -43,9 +43,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 14vw;
+    width: 16.7vw;
     margin-right: 80px;
-    font-size: 20px;
+
+  }
+  .header__right > h1 {
+    font-size: 14px;
   }
   .header__right > button {
     background-color: rgba(128, 128, 128, 0.349);
@@ -61,11 +64,14 @@
     background-color: #d80338af;
   }
   .language{
-    color: rgba(0, 0, 0, 0.815);
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    
   }
   .language:hover{
     color: rgba(0, 0, 0, 0.226);
   }
+  
   .user__icon {
     font-size: 25px;
     color: gray;
@@ -75,3 +81,7 @@
     color: rgba(0, 0, 0, 0.288);
   }
     
+  .icon {
+     margin-left:18.5vh;
+     margin-bottom: -5px;
+  }

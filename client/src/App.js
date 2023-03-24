@@ -15,6 +15,8 @@ import Gallery4 from './components/Gallery/Gallery4';
 import Gallery5 from './components/Gallery/Gallery5';
 import Gallery6 from './components/Gallery/Gallery6';
 import SignIn from './components/Home/SignIn';
+import Reserve from './components/Home/Reserve';
+import Gallery1 from './components/Gallery/Gallery1';
 
 
 
@@ -31,6 +33,7 @@ function App() {
          <Route path="/" element={<Home />} />
          <Route path="/amenities" element={<Amenities />} />
          <Route path="/loginpage" element={<LoginPage/>} />
+         <Route path="/gallery1" element={<Gallery1 />} />
          <Route path="/gallery2" element={<Gallery2 />} />
          <Route path="/gallery3" element={<Gallery3 />} />
          <Route path="/gallery4" element={<Gallery4/>} />
@@ -38,6 +41,7 @@ function App() {
          <Route path="/gallery6" element={<Gallery6 />} />
          <Route path="/searchpage" element={<SearchPage />} />
          <Route path="/signin" element={<SignIn/>} />
+         <Route path="/reserve" element={<Reserve />} />
           </Routes>
         <Footer />
     </Router>

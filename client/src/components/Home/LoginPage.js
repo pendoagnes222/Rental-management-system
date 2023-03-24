@@ -7,7 +7,7 @@ import { useForm } from 'react-hook-form';
 import { Alert } from 'react-bootstrap';
 export default function LoginPage() {
 
-    const { register, watch, handleSubmit, reset, formState: { errors } } = useForm();
+    const { register,  handleSubmit, reset, formState: { errors } } = useForm();
     //const onSubmit = data => console.log(data);
     const [show, setShow] = useState(false)
     const [serverResponse, setServerResponse] = useState('')

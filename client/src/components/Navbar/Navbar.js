@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import { FaUserCircle, FaDownload} from 'react-icons/fa'
+import { FaUserCircle, FaGlobe,FaSearch} from 'react-icons/fa'
 
 /*import SearchIcon from "@material-ui/icons/Search";
 import LanguageIcon from "@material-ui/icons/Language";
@@ -23,24 +23,26 @@ function Navbar() {
         </Link>
         <div className='header__center'>
         <button onClick={() => navigate('/searchpage')}
-             variant='outlined'>Check Availability
+             variant='outlined'>Search<FaSearch className='icon'/>
             </button>
                 {/*<input type="text" />
                    <FaSearch/>*/}
          </div>
 
          <div className='header__right'>
-                
-                <button onClick={() =>{
+          <h1>Airbnb your home</h1>
+
+                <FaGlobe className='language'/>
+                {/*<button onClick={() =>{
                   navigate("/loginpage")
-                }}> Post  apartment</button>
+                }}> Post  apartment</button>*/}
               
                 <FaUserCircle  className='user__icon'
                onClick={() =>{
             navigate("/loginpage");
            }} />
            
-                <FaDownload className='language'/>
+                
             
                 
             </div>

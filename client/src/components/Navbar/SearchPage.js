@@ -24,7 +24,10 @@ function SearchPage() {
                 star={4.73}
                 price="$30 / night"
                 total="$117 total"
+                
+            
             />
+            
 
             <SearchResult
                 img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLmWN8S_vSd0fjYCSjsSYBEqFXV7WNRD6wOTuyTF5Mxil-UfGPgPji2qNbP3fJkjDQFwc&usqp=CAU"

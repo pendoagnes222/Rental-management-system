@@ -65,10 +65,29 @@
 
 .searchResults__price > p {
     text-align: right;
+    
+
   }
 
 .searchResults__price {
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     right: 30px;
+}
+
+
+
+.searchResults__price > button {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #ff7779;
+    border-radius: 15px;
+    border: none;
+    
+}
+
+.searchResults__price > button:hover{
+    background-color: rgba(128, 128, 128, 0.123);
+    border: none;
 }

@@ -2,9 +2,11 @@ import React from 'react';
 import './SearchResult.css';
 import { FaStar } from 'react-icons/fa';
 import { FcLike } from "react-icons/fc";
+import {  useNavigate} from "react-router-dom"
 
 
 function SearchResult({
+
     img,
     location,
     title,
@@ -13,6 +15,7 @@ function SearchResult({
     price,
     total,
 }) {
+    let navigate = useNavigate();
     return (
         <div className='searchResult'>
             <img src={img} alt="" />
@@ -37,6 +40,11 @@ function SearchResult({
                     <div className='searchResults__price'>
                         <h2>{price}</h2>
                         <p>{total}</p>
+                         <button
+                         onClick={() =>{
+                            navigate("/loginpage");
+                           }}>
+                            Reserve</button>
                     </div>
                 </div>
             </div>

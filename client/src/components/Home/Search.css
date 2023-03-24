@@ -41,12 +41,12 @@
     height: 30px;
     font-size: 12px;
     border-radius: 8px;
-    border-color: #ff7779;
+    border: none;
     margin-left: 50px;
 
 }
 
 .search > button:hover {
-    background-color: white;
+    background-color: rgba(128, 128, 128, 0.171);
     color: #ff7779;
 }
