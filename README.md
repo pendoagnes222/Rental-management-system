@@ -6,11 +6,24 @@
    
     * backend: Built using Express.js and Node.js
 
-# Getting Started
+# Installation
 
-    * Run the code and view on the browser via localhost 3000
-    
-    * cd client npm start
+    * Clone project
+
+* git clone: https://github.com/jobootwori/B_and_B.git
+
+   * cd into folder
+
+* cd clients/src
+
+   * Download dependencies
+
+*cd client npm install
+
+      * Run code 
+
+* cd clients npm start
+
 
 # Technologies used
     
