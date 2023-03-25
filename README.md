@@ -12,13 +12,13 @@
 
 * git clone: https://github.com/jobootwori/B_and_B.git
 
-   * cd into folder
+    * cd into folder
 
 * cd clients/src
 
    * Download dependencies
 
-*cd client npm install
+* cd client npm install
 
       * Run code 
 
