@@ -8,21 +8,21 @@
 
 # Installation
 
-    * Clone project
+* Clone project
+    
+    * git clone: https://github.com/jobootwori/B_and_B.git
 
-* git clone: https://github.com/jobootwori/B_and_B.git
+* cd into folder
+    
+    * cd clients/src
 
-    * cd into folder
+* Download dependencies
 
-* cd clients/src
+    * cd client npm install
 
-   * Download dependencies
-
-* cd client npm install
-
-      * Run code 
-
-* cd clients npm start
+* Run code 
+    
+    * cd clients npm start
 
 
 # Technologies used
