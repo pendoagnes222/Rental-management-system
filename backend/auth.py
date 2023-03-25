@@ -1,33 +1,37 @@
-from flask import Flask,jsonify, request, make_response
+from flask import Flask, jsonify, request, make_response
 from flask_cors import cross_origin
-from flask_restx import Resource,Namespace,fields
+from flask_restx import Resource, Namespace, fields
 from models import Image_Upload, User
-from werkzeug.security import generate_password_hash,check_password_hash
-from flask_jwt_extended import (JWTManager,
-create_access_token,create_refresh_token,
-get_jwt_identity,
-jwt_required)
+from werkzeug.security import generate_password_hash, check_password_hash
+from flask_jwt_extended import (
+    JWTManager,
+    create_access_token,
+    create_refresh_token,
+    get_jwt_identity,
+    jwt_required,
+)
 
-auth_ns = Namespace('auth',description="A namespace for authentication")
+auth_ns = Namespace('auth', description="A namespace for authentication")
 
-#model (serializer)
+# model (serializer)
 signUp_model = auth_ns.model(
     "SignUp",
     {
-        "username":fields.String(),
-        "email":fields.String(),
-        "mobileNumber":fields.String(),
-        "password":fields.String()
+        "username": fields.String(),
+        "email": fields.String(),
+        "mobileNumber": fields.String(),
+        "password": fields.String()
     }
 )
 
 logIn_model = auth_ns.model(
     "LogIn",
     {
-    "username":fields.String(),
-    "password":fields.String()
+        "username": fields.String(),
+        "password": fields.String()
     }
 )
+
 
 @auth_ns.route('/signup')
 class signUp(Resource):
@@ -35,7 +39,7 @@ class signUp(Resource):
 
     @auth_ns.expect(signUp_model)
     def post(self):
-        data=request.get_json()
+        data = request.get_json()
 
         username = data.get("username")
         db_user = User.query.filter_by(username=username).first()
@@ -43,7 +47,7 @@ class signUp(Resource):
         if db_user is not None:
             return jsonify({"message": f"User with username {username} already exists"})
 
-        new_user=User(
+        new_user = User(
             username=data.get('username'),
             email=data.get('email'),
             mobileNumber=data.get('mobile_number'),
@@ -53,8 +57,9 @@ class signUp(Resource):
 
         new_user.save()
 
-        return make_response(jsonify({"message":"User created successfully"}),201)
-    
+        return make_response(jsonify({"message": "User created successfully"}), 201)
+
+
 @auth_ns.route('/image_upload')
 class uploadImage(Resource):
     """Upload Rental images"""
@@ -62,13 +67,13 @@ class uploadImage(Resource):
     @auth_ns.expect(Image_Upload)
     def post(self):
 
-
         filename = request.files['filename']
         image = request.files['image'].read()
         new_image = Image_Upload(filename=filename, image=image)
         new_image.save()
-        return make_response(jsonify({'message': 'Image uploaded successfully!'}),201)
-    
+        return make_response(jsonify({'message': 'Image uploaded successfully!'}), 201)
+
+
 @auth_ns.route('/login')
 class logIn(Resource):
     """Log in as user"""
@@ -82,21 +87,36 @@ class logIn(Resource):
 
         db_user = User.query.filter_by(username=username).first()
 
-        if  db_user and check_password_hash(db_user.password, password):
-            access_token = create_access_token(identity = db_user.username)
-            refresh_token = create_refresh_token(identity = db_user.username)
+        if db_user and check_password_hash(db_user.password, password):
+            access_token = create_access_token(identity=db_user.username)
+            refresh_token = create_refresh_token(identity=db_user.username)
 
-        return jsonify(
-            {"access_token": access_token, "refresh_token": refresh_token}
+            response_object = {
+                'access_token': access_token,
+                'refresh_token': refresh_token
+            }
+            status_code = 201
+        else:
+            response_object = {
+                'message': 'Invalid credentials'
+            }
+            status_code = 401
+
+        return make_response(jsonify(response_object), status_code)
+        """
+        return make_response(jsonify(
+            {"access_token": access_token, "refresh_token": refresh_token}, 201)
         )
-    
+        """
+
+
 @auth_ns.route('/refresh')
 class RefreshResource(Resource):
     @jwt_required(refresh=True)
     def post(self):
 
-        current_user=get_jwt_identity()
+        current_user = get_jwt_identity()
 
-        new_access_token=create_access_token(identity=current_user)
+        new_access_token = create_access_token(identity=current_user)
 
-        return make_response(jsonify({"access_token":new_access_token}),200)
+        return make_response(jsonify({"access_token": new_access_token}), 200)
