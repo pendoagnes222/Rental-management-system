@@ -1,20 +1,21 @@
 .footer {
     background-color: rgba(128, 128, 128, 0.027);
-    padding-top: 330px;
+    padding-top: 280px;
     margin-top: -1px;
-    width: 100%;
+    width:100;
     border-radius: 10px;
+    
     
 }
 
 .footer > h1 {
-    margin-top: -40vh;
+    margin-top: -46vh;
     font-size: 22px;
     
 }
 
 .footer > h2 {
-    font-size: 16px;
+    font-size: 10px;
     margin-top: 8px;
     margin-left: 39px;
     
@@ -24,15 +25,15 @@
 .footer__info > h1 {
     font-size: 22px;
     margin-left: 55vh;
-    margin-top: -23vh;
+    margin-top: -21vh;
     
     
 }
 
 .footer__info > h2  {
     margin-left: 55vh;
-    font-size: 16px;
-    margin-top: 8px;
+    font-size: 10px;
+    margin-top: auto;
     
     color: rgba(0, 0, 0, 0.705);
 }
@@ -48,7 +49,7 @@
 }
 
 .footer__info2 > h2 {
-    font-size: 16px;
+    font-size: 10px;
     margin-left: 103vh;
     margin-top: 10px;
     
@@ -67,7 +68,7 @@
 }
 
 .footer__info3 > h2 {
-    font-size: 16px;
+    font-size: 10px;
     margin-left: 146vh;
     margin-top: 9px;
     display: flex;
@@ -77,15 +78,15 @@
 }
 
 .footer__terms {
-    font-size: 10px;
+    font-size: 9px;
     color: rgba(0, 0, 0, 0.705);
     margin-top: 10px;
     margin-left: 40px;
 }
 
 .footer__social{
-  margin-left: 1000px;
-  font-size: 25px;
+  margin-left: 900px;
+  font-size: 22px;
   margin-top: -10px;
   justify-content: space-between;
   

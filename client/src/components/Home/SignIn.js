@@ -16,14 +16,15 @@ export default function SignIn() {
                 <h2>Sign In</h2>
                 
 
-                <form id='form' className='flex flex-col' onSubmit={handleSubmit(onSubmit)}>
-                    <input type="text" {...register("username")} placeholder='username' />
+                <form id='form' className='flex flex-col' >
+                    <input type="text" {...register("username", { required: true, maxLength: 25 })} placeholder='username' />
+                    {errors.username && <span style={{ color: "red" }}> <small>Username is required</small></span>}
                     <input type="text" {...register("password")} placeholder='password' />
-                    <input type="text" {...register("confirmpwd")} placeholder='confirm password' />
-                    <input type="text" {...register("mobile", { required : true, maxLength: 10 })} placeholder='mobile number' />
-                    {errors.mobile?.type === "required" && "Mobile Number is required"}
-                    {errors.mobile?.type === "maxLength" && "Max Length Exceed"}
-                    <button className='btn'>Sign In</button>
+                    {errors.password && <span style={{ color: "red" }}> <small>Password is required</small></span>}
+                    {errors.password?.type === "maxLength" && <p style={{color:'red'}}>
+                    <small>Password should be more than 8 characters</small>
+                    </p>}
+                    <button className='btn' onSubmit={handleSubmit(onSubmit)}>Sign In</button>
                 </form>
 
             </div>
