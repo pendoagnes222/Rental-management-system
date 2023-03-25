@@ -1,65 +1,79 @@
-.register1{
-    max-width: 100%;
-    width: 100vw;
-    display:flex;
-    border: 1px solid #e9ecef;
-    border-radius: 5px;
-    /* box-shadow: 1px 3px 10px #e9ecef; */
-    background-color: rgba(0, 0, 0, 0.192);
-  }
+*{
+    margin: 0;
+    padding: 0;
+}
+.containerr{
+    background-color: rgba(255, 255, 255, 0.979);
+    
+}
 
-  .register1 span{
-    color: black;
-  }
-  
-  #form{
-    max-width: 320px;
-    width: 100vw;
-    margin: 2em auto;
-  }
-  
-  #form >  input, .btn{
-    border: 1px solid #e9ecef;
-    padding: .9em 1em;
-  }
-  
-  #form > input:focus{
-    outline: none;
-  }
-  
-  #form > .btn{
-    background-color: #003049;
-    color: #e9ecef;
-    font-size: 1em;
-   
-  }
-
-  #form > .btn:hover {
-    background-color: rgba(0, 0, 0, 0.226);
-    color: #003049;
-  }
-  
-  .flex{
-    display: flex;
-    gap: 1em;
-  }
-  
-  .flex-col{
-    flex-direction: column;
-  }
-  
-  .register1 .col-1{
+.formm{
+    
+    height:480px;
+    width:800px;
     margin: auto;
-    padding: 3em 0;
+    margin-top: 0px;
     
-  }
-  
-  
+}
 
-  
-  @media screen and (min-width: 860px)  {
-    .register .col-2 img{
-      display: initial;
+#first-group{
+    border:none;
+    width:400px;
+    height:350px;
+    margin-top: 8px;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.863);
+}
+#contentt{
+    border: 1px solid #fff;
+    margin:10px;
+    margin-top: 35px;
+    margin-left: 8px;
+    padding:5px;
+    background-color: #fff;
+}
+#contentt #input-group{
+    border:none;
+    outline:none;
+    background: transparent;
+    margin-left:8px;
+    width:300px;
+    color : black;
+   
     }
-  }
+::placeholder{
+    color: rgba(0, 0, 0, 0.596);
+}
+.fa{
+    display:inline-block;
+    color:red;
+    border-right:1px solid #fff;
+    padding:8px;
+    margin-left: 8px;
     
+    
+}
+#second-group{
+    position: absolute;
+    border:none;
+    width:400px;
+    height: 350px;
+    margin-top: 8px;
+    margin-left:450px;
+    background-color: rgba(0, 0, 0, 0.863);
+
+}
+#submit-btn{
+    margin-top: 380px;
+    margin-left: 600px;
+    background-color: #ff7779;
+    color:#000;
+    width:170px;
+    border: none;
+    border-radius: 20px;
+    outline:none;
+    padding:10px;
+    font-size: 20px;
+}
+
+

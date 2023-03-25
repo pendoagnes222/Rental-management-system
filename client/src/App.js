@@ -25,6 +25,7 @@ import Gallery1 from './components/Gallery/Gallery1';
 
 
 
+
 function App() {
   return (
     <Router>
@@ -42,6 +43,7 @@ function App() {
          <Route path="/searchpage" element={<SearchPage />} />
          <Route path="/signin" element={<SignIn/>} />
          <Route path="/reserve" element={<Reserve />} />
+         
           </Routes>
         <Footer />
     </Router>

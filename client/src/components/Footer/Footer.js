@@ -41,9 +41,9 @@ function Footer() {
         <h2>Copyright &copy; 2023 Airbnb,Inc. All Rights Reserved</h2>
         </div>
         <div className='footer__social'>
-        <a  href='https://facebook.com'>< FaFacebook/> </a>
-        <a  href='https://Twitter.com'>< FaTwitter/> </a>
-        <a   href='https://Instagran.com'>< FaInstagram/> </a>
+        <a  className='facebook' href='https://facebook.com'>< FaFacebook/> </a>
+        <a  className='twitter' href='https://Twitter.com'>< FaTwitter/> </a>
+        <a  className='instagram' href='https://Instagran.com'>< FaInstagram/> </a>
         
         </div>
 

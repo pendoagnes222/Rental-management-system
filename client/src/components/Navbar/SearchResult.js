@@ -42,7 +42,7 @@ function SearchResult({
                         <p>{total}</p>
                          <button
                          onClick={() =>{
-                            navigate("/loginpage");
+                            navigate("/reserve");
                            }}>
                             Reserve</button>
                     </div>
