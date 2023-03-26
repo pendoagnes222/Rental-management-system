@@ -3,14 +3,14 @@ import './SignIn.css'
 import { useForm } from 'react-hook-form'
 import { Link } from 'react-router-dom'
 import { Login } from '../auth'
-import {useHistory} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
 
 export default function SignIn() {
 
     const { register, handleSubmit, login, reset, formState: { errors } } = useForm()
 
-    const history=useHistory()
+    const history=useNavigate()
         
     const onSubmit = (data) => {
         console.log(data)
