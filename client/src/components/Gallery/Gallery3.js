@@ -1,11 +1,16 @@
 import React, {useState} from "react";
 import './Gallery1.css'
-import Img3 from '../Images/kitchen1.jpeg'
-import Img2 from '../Images/dinning4.jpeg'
-import Img1 from '../Images/bd4.jpeg'
-import Img5 from '../Images/br4.jpeg'
-import Img4 from '../Images/laundry5.jpeg'
-import Img6 from '../Images/gym4.jpeg'
+import Img1 from '../Images/livingrmc.jpeg'
+import Img2 from '../Images/bedroom3b.webp'
+import Img3 from '../Images/bedroom3b.webp'
+import Img4 from '../Images/bathroom2a.webp'
+import Img5 from '../Images/bathroom2b.webp'
+import Img6 from '../Images/bedroom3c.webp'
+import Img7 from '../Images/kitchena.webp'
+import Img8 from '../Images/gymc.webp'
+import Img9 from '../Images/gymca.webp'
+import Img10 from '../Images/rooftopa.webp'
+
 
 
 const Gallery3 = () => {
@@ -34,7 +39,24 @@ const Gallery3 = () => {
         {
             id: 6,
             imgsrc: Img6,
+        },
+        {
+            id: 7,
+            imgsrc: Img7,
+        },
+        {
+            id: 8,
+            imgsrc: Img8,
+        },
+        {
+            id: 9,
+            imgsrc: Img9,
+        },
+        {
+            id: 10,
+            imgsrc: Img10,
         }
+
 
     ]
     const[model, setModel] = useState(false)

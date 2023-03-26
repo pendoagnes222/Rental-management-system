@@ -8,21 +8,20 @@ function SearchPage() {
     
      <div className='searchPage'>
             <div className='searchPage__info'>
-                <p>62 stays · 26 March to 30 March · 2 guest</p>
-                <h1>Stays nearby</h1>
-                <button variant="outlined">Cancellation Flexibility</button>
+                <h1>Stay nearby</h1>
+                {/*<button variant="outlined">Cancellation Flexibility</button>
                 <button variant="outlined">Type of place</button>
                 <button variant="outlined">Price</button>
                 <button variant="outlined">Rooms and beds</button>
-                <button variant="outlined">More filters</button>
+               <button variant="outlined">More filters</button>*/}
             </div>
             <SearchResult
                 img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH8K8ZaadK8zwcMxsWQT7klHibxfs9yQq09Q&usqp=CAU"
                 location="Private room in Kileleshwa"
-                title="Stay at this spacious Ravila House"
+                title="Private room in Kileleshwa"
                 description="1 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen · Free parking · Washing Machine"
                 star={4.73}
-                price="$30 / night"
+               // price="$30 / night"
                 total="$117 total"
                 
             
@@ -35,7 +34,7 @@ function SearchPage() {
                 title="Independant luxury studio apartment"
                 description="2 guest · 3 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen"
                 star={4.3}
-                price="$40 / night"
+               // price="$40 / night"
                 total="$157 total"
             />
 
@@ -45,7 +44,7 @@ function SearchPage() {
                 title="Nairobi Studio Apartments"
                 description="4 guest · 4 bedroom · 4 bed · 2 bathrooms · Free parking · Washing Machine"
                 star={3.8}
-                price="$35 / night"
+                //price="$35 / night"
                 total="$207 total"
             />
             <SearchResult
@@ -54,7 +53,7 @@ function SearchPage() {
                 title="Apartment in Langata"
                 description="1 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen · Free parking · Washing Machine"
                 star={4.1}
-                price="$55 / night"
+                //price="$55 / night"
                 total="$320 total"
             />
             <SearchResult
@@ -63,7 +62,7 @@ function SearchPage() {
                 title="Spacious Peaceful Modern Bedroom"
                 description="3 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Free parking · Dry Cleaning"
                 star={5.0}
-                price="$60 / night"
+                //price="$60 / night"
                 total="$450 total"
             />
             <SearchResult
@@ -72,7 +71,7 @@ function SearchPage() {
                 title="The Blue Room In South B"
                 description="2 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Washing Machine"
                 star={4.23}
-                price="$65 / night"
+                //price="$65 / night"
                 total="$480 total"
             />
             <SearchResult
@@ -81,7 +80,7 @@ function SearchPage() {
                 title="Kilimani Luxury Apartment"
                 description="3 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen · Free parking · Washing Machine"
                 star={3.85}
-                price="$90 / night"
+                //price="$90 / night"
                 total="$650 total"
             />
     </div>

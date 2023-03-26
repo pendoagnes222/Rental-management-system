@@ -1,11 +1,15 @@
 import React, {useState} from "react";
 import './Gallery1.css'
-import Img3 from '../Images/kitchen4.jpeg'
-import Img2 from '../Images/dinning3.jpeg'
-import Img1 from '../Images/bd5.jpeg'
-import Img5 from '../Images/br3.jpeg'
-import Img4 from '../Images/laundry1.jpeg'
-import Img6 from '../Images/gym3.jpeg'
+import Img1 from '../Images/livingrmb.jpeg'
+import Img2 from '../Images/kitchen4a.webp'
+import Img3 from '../Images/bedroom2b.webp'
+import Img4 from '../Images/bedroom2c.webp'
+import Img5 from '../Images/bathroom2a.webp'
+import Img6 from '../Images/bedroom2a.webp'
+import Img7 from '../Images/bathroom2b.webp'
+import Img8 from '../Images/laundry2.jpeg'
+import Img9 from '../Images/poola.webp'
+import Img10 from '../Images/basementa.webp'
 
 
 
@@ -35,6 +39,22 @@ const Gallery2 = () => {
         {
             id: 6,
             imgsrc: Img6,
+        },
+        {
+            id: 7,
+            imgsrc: Img7,
+        },
+        {
+            id: 8,
+            imgsrc: Img8,
+        },
+        {
+            id: 9,
+            imgsrc: Img9,
+        },
+        {
+            id: 10,
+            imgsrc: Img10,
         }
 
     ]

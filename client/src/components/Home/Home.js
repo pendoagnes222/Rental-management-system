@@ -24,7 +24,7 @@ function Home() {
         <Banner />
         <h1>Top-rated service apartment in Nairobi </h1>
         <div className='home__section'>
-             <Link to="/gallery5">
+             <Link to="/gallery1">
              <Card 
              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsM11SW3DymOkDNUCj7_GEewdu0DYTssrQDw&usqp=CAU"
             title="Condo in Nairobi"
@@ -34,7 +34,7 @@ function Home() {
             </Link>
             
             
-            <Link to="/gallery1">
+            <Link to="/gallery2">
             <Card 
              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwdLQQoUu7kjYqlHh4bcTQoGt7-FXaCo68WA&usqp=CAU"
             title="Rental unit in Nairobi"
@@ -43,7 +43,7 @@ function Home() {
             />
             </Link>
             
-            <Link to="gallery2">
+            <Link to="gallery3">
             <Card 
              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzLSC8muoGRkj4AV0gKwxXXrP6JHwYznBqO4FHaEWDACxFeJ4Vz_2-bp4WT4mJg_M1DLo&usqp=CAU"
              title="Condo in Westlands"
@@ -53,7 +53,7 @@ function Home() {
             </Link>
         </div>
         <div className="home__section">
-        <Link to="gallery3">
+        <Link to="gallery4">
         <Card
              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJbzzyAwOm4SeZARzUeUPkJk0QU8W08js2Ng&usqp=CAU"
             title="Rental unit in Lavington"
@@ -62,7 +62,7 @@ function Home() {
             />
             </Link>
             
-            <Link to="/gallery4">
+            <Link to="/gallery5">
             <Card 
              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkOX6FFVED8p_DNhbfM7-zRz8x974lhpSumJg_EZRr1BZGcrAkoJ1aEEb_TKTFgIFRpcE&usqp=CAU"
             title="condo in Kilimani"

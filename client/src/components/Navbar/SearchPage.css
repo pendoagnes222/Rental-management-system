@@ -1,5 +1,5 @@
 .searchPage__info {
-    padding: 20px;
+    padding: -10px;
   }
 
 .searchPage__info > p {
@@ -8,7 +8,7 @@
 }
 
 .searchPage__info > h1 {
-    margin-bottom: 30px;
+    margin-bottom: -15px;
 }
 
 .searchPage__info > button {
