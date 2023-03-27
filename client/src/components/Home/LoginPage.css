@@ -45,11 +45,12 @@
   .flex{
     display: flex;
     gap: 1em;
-    
+        
   }
   
   .flex-col{
     flex-direction: column;
+  
   }
   
   .register .col-1{
