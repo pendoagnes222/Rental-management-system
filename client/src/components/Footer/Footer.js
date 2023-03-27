@@ -11,7 +11,7 @@ function Footer() {
     <div className='footer'>
             <section className="footer-info">
               
-       <h2>We are based in Exmak, Nairobi </h2>
+       <h2>We are based in Ermak, Nairobi </h2>
        <p>we work with clients from all over. Get in touch with us</p>
        <div className="contact_info">
         <h4><GrMail className='icon' /> info@rentals.com</h4>
