@@ -3,7 +3,7 @@
     padding: 0;
 }
 .containerr{
-    background-color: rgba(3, 3, 59, 0.966);
+    background-color: rgb(4, 4, 78);
     
 }
 
@@ -28,7 +28,7 @@
     height:350px;
     margin-top: 8px;
     position: absolute;
-    background-color:rgba(0, 0, 0, 0.863);
+    background-color:rgba(0, 0, 0, 0.548);
 }
 #contentt{
     border: 1px solid #fff;
@@ -66,7 +66,7 @@
     height: 350px;
     margin-top: 8px;
     margin-left:450px;
-    background-color: rgba(0, 0, 0, 0.863);
+    background-color: rgba(0, 0, 0, 0.548);
 
 }
 #submit-btn{
@@ -80,6 +80,11 @@
     outline:none;
     padding:10px;
     font-size: 20px;
+}
+
+#submit-btn:hover {
+    color: #ff7779;
+    background-color: #fff;
 }
 
 
