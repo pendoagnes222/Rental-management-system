@@ -5,7 +5,7 @@
   border: 1px solid #e9ecef;
   border-radius: 5px;
   /* box-shadow: 1px 3px 10px #e9ecef; */
-  background-color: rgba(0, 0, 0, 0.185);
+  
 }
 
 .register span{
@@ -51,6 +51,8 @@
 .register .col-1{
   margin: auto;
   padding: 3em 0;
+  color: white;
+ 
   
   
 }

@@ -4,8 +4,9 @@
     display:flex;
     border: 1px solid #e9ecef;
     border-radius: 5px;
+    background-color: rgb(2, 2, 31);
     /* box-shadow: 1px 3px 10px #e9ecef; */
-    background-color: rgba(0, 0, 0, 0.212);
+  
   }
 
   .register span{
@@ -13,9 +14,11 @@
   }
   
   #form{
+    
     max-width: 320px;
     width: 100vw;
     margin: 2em auto;
+    
   }
   
   #form >  input, .btn{
@@ -42,6 +45,7 @@
   .flex{
     display: flex;
     gap: 1em;
+    
   }
   
   .flex-col{
@@ -51,8 +55,11 @@
   .register .col-1{
     margin: auto;
     padding: 3em 0;
+    color: white;
+    text-align: center;
     
   }
+  
   
   
 

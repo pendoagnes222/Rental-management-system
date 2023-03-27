@@ -40,6 +40,7 @@ export default function SignIn() {
         <div className="register">
             <div className="col-1">
                 <h2>Sign In</h2>
+                <p>Register to enjoy our services</p>
                 
 
                 <form id='form' className='flex flex-col' >
