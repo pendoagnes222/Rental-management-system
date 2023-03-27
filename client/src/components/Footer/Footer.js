@@ -14,7 +14,7 @@ function Footer() {
        <h2>We are based in Exmak, Nairobi </h2>
        <p>we work with clients from all over. Get in touch with us</p>
        <div className="contact_info">
-        <h4><GrMail className='icon' /> info@rentals.co</h4>
+        <h4><GrMail className='icon' /> info@rentals.com</h4>
         <h4><BsFillTelephoneInboundFill className='icon2'/> (254) 3345 7689</h4>
        </div>
        <div className='footer__social'>
