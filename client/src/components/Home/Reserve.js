@@ -7,7 +7,7 @@ function Reserve() {
 	  <div className="containerr">
         <form className="form-group">
             <div className="formm">
-                <h1 className="text-white text-center">Booking Now</h1>
+                <h1>Booking Now</h1>
 
                 <div id="first-group">
 
@@ -22,8 +22,8 @@ function Reserve() {
                     </div>
 
                     <div id="contentt">
-                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                        <input type="text" id="input-group" placeholder="Departure Date"/>
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="City"/>
                     </div>
 
                     <div id="contentt">
@@ -51,8 +51,8 @@ function Reserve() {
                     </div>
 
                     <div id="contentt">
-                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                        <input type="text" id="input-group" placeholder="Arrival Date"/>
+                        <i class="fa fa-address-card" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="Address"/>
                     </div>
 
                     <div id="contentt">

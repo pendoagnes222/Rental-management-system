@@ -3,17 +3,23 @@
     padding: 0;
 }
 .containerr{
-    background-color: rgba(255, 255, 255, 0.979);
+    background-color: rgba(3, 3, 59, 0.966);
     
 }
 
 .formm{
     
-    height:480px;
+    height:550px;
     width:800px;
     margin: auto;
     margin-top: 0px;
     
+}
+
+.formm > h1 {
+    color:  white;
+    text-align: center;
+    padding-top: 60px;
 }
 
 #first-group{
