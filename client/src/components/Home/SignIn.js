@@ -1,8 +1,9 @@
 import React from 'react'
 import './SignIn.css'
+import './Reserve'
 import { useForm } from 'react-hook-form'
 import { Link } from 'react-router-dom'
-import { Login } from '../auth'
+import { login } from '../auth'
 import {useNavigate} from 'react-router-dom'
 
 
@@ -30,8 +31,18 @@ export default function SignIn() {
        .then(data=>{
            console.log(data.access_token)
            login(data.access_token)
-       .catch(err => console.log(err))   
-           
+          
+
+           if (data){
+            login(data.access_token)
+
+            history.push('/Reserve')
+           }
+           else{
+               alert('Invalid username or password')
+           }
+
+                 
            
        reset()
 })}
