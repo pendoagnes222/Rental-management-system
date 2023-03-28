@@ -1,8 +1,9 @@
 import React from 'react'
 import './Navbar.css'
+import '../Navbar/SearchPage'
 import { FaUserCircle, FaGlobe, FaSearch } from 'react-icons/fa'
 import img from '../Images/Airbnb-logo.jpg'
-import { useAuth } from '../auth'
+import { useAuth, logout } from '../auth'
 
 /*import SearchIcon from "@material-ui/icons/Search";
 import LanguageIcon from "@material-ui/icons/Language";
@@ -16,21 +17,23 @@ import { Link, useNavigate } from "react-router-dom"
 const LoggedInLink = () => {
   const navigate = useNavigate();
   return (
-    
-    <div className='header__right'>
-    <h1>apartments</h1>
 
-    <FaGlobe className='language' />
-    {/*<button onClick={() =>{
+    <div className='header__right'>
+      <Link to='/logout'>
+        <small onClick={() => logout()}>Log Out</small>
+      </Link>
+
+      <FaGlobe className='language' />
+      {/*<button onClick={() =>{
               navigate("/loginpage")
             }}> Post  apartment</button>*/}
 
-    <FaUserCircle className='user__icon'
-      onClick={() => {
-        navigate("/");
-      }} />
+      <FaUserCircle className='user__icon'
+        onClick={() => {
+          navigate("/");
+        }} />
 
-  </div>
+    </div>
   )
 }
 
@@ -40,28 +43,29 @@ const LoggedOutLinks = () => {
   const navigate = useNavigate();
 
   return (
-    
-    <div className='header__right'>
-    <h1>apartments</h1>
 
-    <FaGlobe className='language' />
-    {/*<button onClick={() =>{
+    <div className='header__right'>
+      <h1>apartments</h1>
+
+      <FaGlobe className='language' />
+      {/*<button onClick={() =>{
               navigate("/loginpage")
             }}> Post  apartment</button>*/}
 
-    <FaUserCircle className='user__icon'
-      onClick={() => {
-        navigate("/loginpage");
-      }} />
+      <FaUserCircle className='user__icon'
+        onClick={() => {
+          navigate("/loginpage");
+        }} />
+        
 
-  </div>
+    </div>
   )
 }
 
 
 function Navbar() {
 
-  const navigate = useNavigate();
+
   const [logged] = useAuth();
   return (
     <div className='header'>
@@ -75,26 +79,12 @@ function Navbar() {
 
         />
       </Link>
-      <div className='header__center'>
-        <button onClick={() => navigate('/searchpage')}
-          variant='outlined'>Search<FaSearch className='icon' />
-        </button>
-        {/*<input type="text" />
-                   <FaSearch/>*/}
-      </div>
+
 
       <div className='header__right'>
-        <h1>apartments</h1>
 
-        <FaGlobe className='language' />
-        {/*<button onClick={() =>{
-                  navigate("/loginpage")
-                }}> Post  apartment</button>*/}
-
-        <FaUserCircle className='user__icon'
-          onClick={() => {
-            navigate("/loginpage");
-          }} />
+        {logged ? <LoggedInLink /> : <LoggedOutLinks />}
+        <div />
 
 
 
