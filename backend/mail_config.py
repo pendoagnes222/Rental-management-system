@@ -1,3 +1,4 @@
+from random import *
 from flask import Flask
 from flask_mail import Mail
 
@@ -9,3 +10,4 @@ app.config['MAIL_USE_SSL'] = True
 app.config['MAIL_USERNAME'] = 'jobootwori@gmail.com'
 app.config['MAIL_PASSWORD'] = 'Ashujo3Y.'
 mail = Mail(app)
+

@@ -1,6 +1,10 @@
-from flask import Flask, jsonify, request, make_response
+from mailbox import Message
+from random import *
+from flask import Flask, jsonify, render_template, request, make_response
 from flask_cors import cross_origin
 from flask_restx import Resource, Namespace, fields
+from mail_config import Mail
+
 from models import Image_Upload, User
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_jwt_extended import (
@@ -32,6 +36,10 @@ logIn_model = auth_ns.model(
     }
 )
 
+@auth_ns.route('/')
+class Home(Resource):
+    def Home(self):
+        return render_template('home.js')
 
 @auth_ns.route('/signup')
 class signUp(Resource):
@@ -59,6 +67,14 @@ class signUp(Resource):
 
         return make_response(jsonify({"message": "User created successfully"}), 201)
 
+@auth_ns.route('/verify', methods=['POST'])
+def verify():
+    otp=randint(000000,999999)
+    email=request.form['email']
+    msg=Message(subject='OTP',sender='ashishprashar37@gmail.com',recipients=[email])
+    msg.body=str(otp)
+    Mail.send(msg)
+    return make_response(jsonify({'message': 'OTPhas been emailed successfully!'}), 201)
 
 @auth_ns.route('/image_upload')
 class uploadImage(Resource):
