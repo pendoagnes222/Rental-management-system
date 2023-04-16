@@ -4,7 +4,7 @@ from flask_jwt_extended import jwt_required
 from models import Rental_Property
 
 
-rental_property_ns = Namespace('rental_property',description="A namespace for Rental properties")
+rental_property_ns = Namespace("rental_property", description="A namespace for Rental properties")
 
 #model (serializer)
 Rental_Property_model = rental_property_ns.model(
@@ -34,8 +34,9 @@ class RentalPropertyResource(Resource):
     def get(self):
         """Get all Rental Properties"""
 
-        RentalProperties=Rental_Property.query.all()
-        return RentalProperties
+        RentalProperties = Rental_Property.query.all()
+        return [rp.serialize() for rp in RentalProperties]
+        
 
     @rental_property_ns.marshal_with(Rental_Property_model)
     @rental_property_ns.expect(Rental_Property_model)
@@ -77,7 +78,7 @@ class ModifyRentalProperty(Resource):
         updateRentalProperty = Rental_Property.query.get_or_404(id)
 
         data = request.get_json()
-        
+        """
         updateRentalProperty.update(
             data.get('type_of_rental'),
             data.get('address'),
@@ -88,7 +89,17 @@ class ModifyRentalProperty(Resource):
             data.get('available')
             #data.get('images')
             )
+        """
+        updateRentalProperty.type_of_rental = data.get('type_of_rental')
+        updateRentalProperty.address = data.get('address')
+        updateRentalProperty.county = data.get('county')
+        updateRentalProperty.description = data.get('description')
+        updateRentalProperty.price = data.get('price')
+        updateRentalProperty.country = data.get('country')
+        updateRentalProperty.available = data.get('available')
+        #updateRentalProperty.images = data.get('images')
 
+        updateRentalProperty.save()
         return updateRentalProperty
 
     @rental_property_ns.marshal_with(Rental_Property_model)

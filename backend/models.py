@@ -64,6 +64,7 @@ class User(db.Model):
     email=db.Column(db.String(80),nullable=False)
     mobileNumber=db.Column(db.String(25))
     password=db.Column(db.Text(),nullable=False)
+    confirmation_token = db.Column(db.String(255), nullable=True)
 
     def __repr__(self):
         return f"<User {self.username}>"

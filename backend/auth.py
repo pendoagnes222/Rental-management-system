@@ -1,9 +1,13 @@
 from mailbox import Message
 from random import *
-from flask import Flask, jsonify, render_template, request, make_response
+from flask import Flask, jsonify, render_template, request, make_response, url_for
 from flask_cors import cross_origin
 from flask_restx import Resource, Namespace, fields
-from mail_config import Mail
+from main import Mail
+from flask import Blueprint, request
+from exts import db
+
+
 
 from models import Image_Upload, User
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -15,7 +19,10 @@ from flask_jwt_extended import (
     jwt_required,
 )
 
+confirmation_bp = Blueprint('confirmation_bp', __name__)
 auth_ns = Namespace('auth', description="A namespace for authentication")
+
+mail = Mail()
 
 # model (serializer)
 signUp_model = auth_ns.model(
@@ -46,6 +53,7 @@ class signUp(Resource):
     """sign up user"""
 
     @auth_ns.expect(signUp_model)
+    
     def post(self):
         data = request.get_json()
 
@@ -54,19 +62,69 @@ class signUp(Resource):
 
         if db_user is not None:
             return jsonify({"message": f"User with username {username} already exists"})
+        
+        # Generate a random confirmation token
+        token = str(randint(100000, 999999))
 
+        # Create a new user object with the provided email and password
         new_user = User(
             username=data.get('username'),
             email=data.get('email'),
             mobileNumber=data.get('mobile_number'),
-            password=generate_password_hash(data.get('password'))
+            password=generate_password_hash(data.get('password')),
+            confirmation_token=token
 
         )
-
+        
+        # Add the user to the database
         new_user.save()
+        
+        # Send a confirmation email to the user
+        confirmation_url = url_for('confirmation_bp.confirm_email', token=token, _external=True)
+        
+        def send_mail(self):
+            message = Message(Subject='Confirm Your Email', recipients=[new_user.email])
+            message.body = f'Click this link to confirm your email: {confirmation_url}'
+            try:
+                mail.send(message)
+                # Add the user to the database
+                new_user.save()
+                return make_response(jsonify({"message": "Signup successful! Please check your email for a confirmation link."}), 201)
+            except Exception as e:
+                # If the email was not sent, delete the user from the database
+                db.session.delete(new_user)
+                db.session.commit()
+                return make_response(jsonify({"message": "Failed to send confirmation email. Please try again."}), 500)
+            
 
-        return make_response(jsonify({"message": "User created successfully"}), 201)
+        """
+        message = Message()
+        #message.add_header('subject', 'Confirm Your Email')
+        
+        message['To'] = data.get('email')
+        #message = Message(subject='Confirm Your Email', recipients=[data.get('email')])
+        #message.add_recipient(data.get('email'))
+        message.set_payload(f'Click this link to confirm your email: {confirmation_url}')
+        #message = Message(subject='Confirm Your Email', recipients=[data.get('email')])
+        #message.body = f'Click this link to confirm your email: {confirmation_url}'
+        mail.send(message)
+        """
+        return make_response(jsonify({"message": "Signup successful! Please check your email for a confirmation link."}), 201)
+    
+@confirmation_bp.route('/confirm_email/<token>', methods=['GET'])
+def confirm_email(token):
+    user = User.query.filter_by(confirmation_token=token).first()
 
+    if user is None:
+        return jsonify({'message': 'Invalid or expired token'})
+    
+    # Update the user's email confirmation status
+    user.confirmed_email = True
+    user.save()
+    
+    return jsonify({'message': 'Your email has been confirmed successfully!'})
+
+"""
 @auth_ns.route('/verify', methods=['POST'])
 def verify():
     otp=randint(000000,999999)
@@ -74,7 +132,9 @@ def verify():
     msg=Message(subject='OTP',sender='ashishprashar37@gmail.com',recipients=[email])
     msg.body=str(otp)
     Mail.send(msg)
+    
     return make_response(jsonify({'message': 'OTPhas been emailed successfully!'}), 201)
+    """
 
 @auth_ns.route('/image_upload')
 class uploadImage(Resource):
