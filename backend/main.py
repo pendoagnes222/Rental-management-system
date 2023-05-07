@@ -16,6 +16,7 @@ def create_app(config):
     app = Flask(__name__)
     app.config.from_object(config)
 
+    
     # Configure the mail server
     app.config['MAIL_SERVER'] = 'smtp.gmail.com'
     app.config['MAIL_PORT'] = 465
@@ -23,7 +24,8 @@ def create_app(config):
     app.config['MAIL_USE_SSL'] = True
     app.config['MAIL_USERNAME'] = 'jobootwori@gmail.com'
     app.config['MAIL_PASSWORD'] = 'lpiardtnpdmwigfk'
-
+    app.config['MAIL_DEFAULT_SENDER'] = ('B and B', 'jobootwori@gmail.com')
+    
     # Initialize the mail object with the Flask app instance
     mail = Mail(app)
 

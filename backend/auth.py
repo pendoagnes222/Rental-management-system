@@ -1,9 +1,13 @@
+######################
+# from main import Mail
+#####################
+from send_email import Mail
+from send_email import send_confirmation_email
 from mailbox import Message
 from random import *
 from flask import Flask, jsonify, render_template, request, make_response, url_for
 from flask_cors import cross_origin
 from flask_restx import Resource, Namespace, fields
-from main import Mail
 from flask import Blueprint, request
 from exts import db
 
@@ -42,6 +46,21 @@ logIn_model = auth_ns.model(
         "password": fields.String()
     }
 )
+"""
+def send_confirmation_email(new_user, confirmation_url):
+    message = Message(Subject='Confirm Your Email', recipients=[new_user.email])
+    message.body = f'Click this link to confirm your email: {confirmation_url}'
+    try:
+        mail.send(message)
+        # Add the user to the database
+        new_user.save()
+        return make_response(jsonify({"message": "Signup successful! Please check your email for a confirmation link."}), 201)
+    except Exception as e:
+        # If the email was not sent, delete the user from the database
+        db.session.delete(new_user)
+        db.session.commit()
+        return make_response(jsonify({"message": "Failed to send confirmation email. Please try again."}), 500)
+"""
 
 @auth_ns.route('/')
 class Home(Resource):
@@ -51,7 +70,7 @@ class Home(Resource):
 @auth_ns.route('/signup')
 class signUp(Resource):
     """sign up user"""
-
+    
     @auth_ns.expect(signUp_model)
     
     def post(self):
@@ -77,11 +96,13 @@ class signUp(Resource):
         )
         
         # Add the user to the database
-        new_user.save()
+        #new_user.save()
         
         # Send a confirmation email to the user
-        confirmation_url = url_for('confirmation_bp.confirm_email', token=token, _external=True)
-        
+        confirmation_url = url_for('send_email', token=token, _external=True)
+        send_confirmation_email(new_user, confirmation_url)
+
+        """
         def send_mail(self):
             message = Message(Subject='Confirm Your Email', recipients=[new_user.email])
             message.body = f'Click this link to confirm your email: {confirmation_url}'
@@ -97,7 +118,7 @@ class signUp(Resource):
                 return make_response(jsonify({"message": "Failed to send confirmation email. Please try again."}), 500)
             
 
-        """
+        
         message = Message()
         #message.add_header('subject', 'Confirm Your Email')
         
@@ -108,22 +129,22 @@ class signUp(Resource):
         #message = Message(subject='Confirm Your Email', recipients=[data.get('email')])
         #message.body = f'Click this link to confirm your email: {confirmation_url}'
         mail.send(message)
-        """
+        
         return make_response(jsonify({"message": "Signup successful! Please check your email for a confirmation link."}), 201)
     
-@confirmation_bp.route('/confirm_email/<token>', methods=['GET'])
-def confirm_email(token):
-    user = User.query.filter_by(confirmation_token=token).first()
+    @confirmation_bp.route('/confirm_email/<token>', methods=['GET'])
+    def confirm_email(token):
+        user = User.query.filter_by(confirmation_token=token).first()
 
-    if user is None:
-        return jsonify({'message': 'Invalid or expired token'})
-    
-    # Update the user's email confirmation status
-    user.confirmed_email = True
-    user.save()
-    
-    return jsonify({'message': 'Your email has been confirmed successfully!'})
-
+        if user is None:
+            return jsonify({'message': 'Invalid or expired token'})
+        
+        # Update the user's email confirmation status
+        user.confirmed_email = True
+        user.save()
+        
+        return jsonify({'message': 'Your email has been confirmed successfully!'})
+"""
 """
 @auth_ns.route('/verify', methods=['POST'])
 def verify():
