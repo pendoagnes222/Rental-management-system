@@ -1,12 +1,19 @@
 
+
 .amenities__info2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0;
     margin: 0;
     width: 100%;
-    
-    
-    
-}
-
-
+  }
+  
+  @media screen and (max-width: 768px) {
+    .amenities__info2 {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
 
