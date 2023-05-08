@@ -50,7 +50,7 @@ const LoggedOutLinks = () => {
       <FaGlobe className='language' />
       {/*<button onClick={() =>{
               navigate("/loginpage")
-            }}> Post  apartment</button>*/}
+            }}> Post apartment</button>*/}
 
       <FaUserCircle className='user__icon'
         onClick={() => {
